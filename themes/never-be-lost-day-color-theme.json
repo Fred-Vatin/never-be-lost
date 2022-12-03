@@ -1,0 +1,1214 @@
+{
+	"name": "Never Be Lost (Day)",
+	"type": "dark",
+	// load token colors (toggle comment and save to apply)
+	"include": "../ressources/tokenColors/tanka-color-theme.json",
+	// "tokenColors": "../ressources/tmTheme/Monocyanide Custom.tmTheme",
+	"semanticHighlighting": true,
+	"semanticTokenColors": {
+		"newOperator": "#d4d4d4",
+		"stringLiteral": "#ce9178",
+		"customLiteral": "#D4D4D4",
+		"numberLiteral": "#b5cea8",
+		"variable": "#e7e7e7", // foreground
+		"property": "#fff1a0"
+	},
+	"colors": {
+		/*
+BBBBBBBBBBBBBBBBB
+B::::::::::::::::B
+B::::::BBBBBB:::::B
+BB:::::B     B:::::B
+B::::B     B:::::B  aaaaaaaaaaaaa      ssssssssss       eeeeeeeeeeee
+B::::B     B:::::B  a::::::::::::a   ss::::::::::s    ee::::::::::::ee
+B::::BBBBBB:::::B   aaaaaaaaa:::::ass:::::::::::::s  e::::::eeeee:::::ee
+B:::::::::::::BB             a::::as::::::ssss:::::se::::::e     e:::::e
+B::::BBBBBB:::::B     aaaaaaa:::::a s:::::s  ssssss e:::::::eeeee::::::e
+B::::B     B:::::B  aa::::::::::::a   s::::::s      e:::::::::::::::::e
+B::::B     B:::::B a::::aaaa::::::a      s::::::s   e::::::eeeeeeeeeee
+B::::B     B:::::Ba::::a    a:::::assssss   s:::::s e:::::::e
+BB:::::BBBBBB::::::Ba::::a    a:::::as:::::ssss::::::se::::::::e
+B:::::::::::::::::B a:::::aaaa::::::as::::::::::::::s  e::::::::eeeeeeee
+B::::::::::::::::B   a::::::::::aa:::as:::::::::::ss    ee:::::::::::::e
+BBBBBBBBBBBBBBBBB     aaaaaaaaaa  aaaa sssssssssss        eeeeeeeeeeeeee
+*/
+		"focusBorder": "#e55279", // Accent
+		"foreground": "#e7e7e7", // foreground
+		"selection.background": "#e55279", // accent
+		"descriptionForeground": "#f2abbe", // Accent even lighter (link)
+		// "errorForeground": "#ff0000",
+		"widget.shadow": "#c543e500",
+		"icon.foreground": "#ec7e9c", // Accent
+		"sash.hoverBorder": "#c39da7", // Foreground placeholder, description
+		/*                                                                         dddddddd                                                             bbbbbbbb                                                             dddddddd
+WWWWWWWW                           WWWWWWWW iiii                               d::::::d                                                             b::::::b                                                             d::::::d
+W::::::W                           W::::::Wi::::i                              d::::::d                                                             b::::::b                                                             d::::::d
+W::::::W                           W::::::W iiii                               d::::::d                                                             b::::::b                                                             d::::::d
+W::::::W                           W::::::W                                    d:::::d                                                               b:::::b                                                             d:::::d
+ W:::::W           WWWWW           W:::::Wiiiiiiinnnn  nnnnnnnn        ddddddddd:::::d    ooooooooooo wwwwwww           wwwww           wwwwwww      b:::::bbbbbbbbb       ooooooooooo   rrrrr   rrrrrrrrr       ddddddddd:::::d     eeeeeeeeeeee    rrrrr   rrrrrrrrr
+  W:::::W         W:::::W         W:::::W i:::::in:::nn::::::::nn    dd::::::::::::::d  oo:::::::::::oow:::::w         w:::::w         w:::::w       b::::::::::::::bb   oo:::::::::::oo r::::rrr:::::::::r    dd::::::::::::::d   ee::::::::::::ee  r::::rrr:::::::::r
+   W:::::W       W:::::::W       W:::::W   i::::in::::::::::::::nn  d::::::::::::::::d o:::::::::::::::ow:::::w       w:::::::w       w:::::w        b::::::::::::::::b o:::::::::::::::or:::::::::::::::::r  d::::::::::::::::d  e::::::eeeee:::::eer:::::::::::::::::r
+    W:::::W     W:::::::::W     W:::::W    i::::inn:::::::::::::::nd:::::::ddddd:::::d o:::::ooooo:::::o w:::::w     w:::::::::w     w:::::w         b:::::bbbbb:::::::bo:::::ooooo:::::orr::::::rrrrr::::::rd:::::::ddddd:::::d e::::::e     e:::::err::::::rrrrr::::::r
+     W:::::W   W:::::W:::::W   W:::::W     i::::i  n:::::nnnn:::::nd::::::d    d:::::d o::::o     o::::o  w:::::w   w:::::w:::::w   w:::::w          b:::::b    b::::::bo::::o     o::::o r:::::r     r:::::rd::::::d    d:::::d e:::::::eeeee::::::e r:::::r     r:::::r
+      W:::::W W:::::W W:::::W W:::::W      i::::i  n::::n    n::::nd:::::d     d:::::d o::::o     o::::o   w:::::w w:::::w w:::::w w:::::w           b:::::b     b:::::bo::::o     o::::o r:::::r     rrrrrrrd:::::d     d:::::d e:::::::::::::::::e  r:::::r     rrrrrrr
+       W:::::W:::::W   W:::::W:::::W       i::::i  n::::n    n::::nd:::::d     d:::::d o::::o     o::::o    w:::::w:::::w   w:::::w:::::w            b:::::b     b:::::bo::::o     o::::o r:::::r            d:::::d     d:::::d e::::::eeeeeeeeeee   r:::::r
+        W:::::::::W     W:::::::::W        i::::i  n::::n    n::::nd:::::d     d:::::d o::::o     o::::o     w:::::::::w     w:::::::::w             b:::::b     b:::::bo::::o     o::::o r:::::r            d:::::d     d:::::d e:::::::e            r:::::r
+         W:::::::W       W:::::::W        i::::::i n::::n    n::::nd::::::ddddd::::::ddo:::::ooooo:::::o      w:::::::w       w:::::::w              b:::::bbbbbb::::::bo:::::ooooo:::::o r:::::r            d::::::ddddd::::::dde::::::::e           r:::::r
+          W:::::W         W:::::W         i::::::i n::::n    n::::n d:::::::::::::::::do:::::::::::::::o       w:::::w         w:::::w               b::::::::::::::::b o:::::::::::::::o r:::::r             d:::::::::::::::::d e::::::::eeeeeeee   r:::::r
+           W:::W           W:::W          i::::::i n::::n    n::::n  d:::::::::ddd::::d oo:::::::::::oo         w:::w           w:::w                b:::::::::::::::b   oo:::::::::::oo  r:::::r              d:::::::::ddd::::d  ee:::::::::::::e   r:::::r
+            WWW             WWW           iiiiiiii nnnnnn    nnnnnn   ddddddddd   ddddd   ooooooooooo            www             www                 bbbbbbbbbbbbbbbb      ooooooooooo    rrrrrrr               ddddddddd   ddddd    eeeeeeeeeeeeee   rrrrrrr
+*/
+		"window.activeBorder": "#e55279", // accent
+		"window.inactiveBorder": "#f2abbe", // accent even lighter
+		/*
+TTTTTTTTTTTTTTTTTTTTTTT                                           tttt                                                    lllllll
+T:::::::::::::::::::::T                                        ttt:::t                                                    l:::::l
+T:::::::::::::::::::::T                                        t:::::t                                                    l:::::l
+T:::::TT:::::::TT:::::T                                        t:::::t                                                    l:::::l
+TTTTTT  T:::::T  TTTTTTeeeeeeeeeeee  xxxxxxx      xxxxxxxttttttt:::::ttttttt             cccccccccccccccc   ooooooooooo    l::::l    ooooooooooo   rrrrr   rrrrrrrrr       ssssssssss
+        T:::::T      ee::::::::::::ee x:::::x    x:::::x t:::::::::::::::::t           cc:::::::::::::::c oo:::::::::::oo  l::::l  oo:::::::::::oo r::::rrr:::::::::r    ss::::::::::s
+        T:::::T     e::::::eeeee:::::eex:::::x  x:::::x  t:::::::::::::::::t          c:::::::::::::::::co:::::::::::::::o l::::l o:::::::::::::::or:::::::::::::::::r ss:::::::::::::s
+        T:::::T    e::::::e     e:::::e x:::::xx:::::x   tttttt:::::::tttttt         c:::::::cccccc:::::co:::::ooooo:::::o l::::l o:::::ooooo:::::orr::::::rrrrr::::::rs::::::ssss:::::s
+        T:::::T    e:::::::eeeee::::::e  x::::::::::x          t:::::t               c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r     r:::::r s:::::s  ssssss
+        T:::::T    e:::::::::::::::::e    x::::::::x           t:::::t               c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r     rrrrrrr   s::::::s
+        T:::::T    e::::::eeeeeeeeeee     x::::::::x           t:::::t               c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r                  s::::::s
+        T:::::T    e:::::::e             x::::::::::x          t:::::t    tttttt     c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r            ssssss   s:::::s
+      TT:::::::TT  e::::::::e           x:::::xx:::::x         t::::::tttt:::::t     c:::::::cccccc:::::co:::::ooooo:::::ol::::::lo:::::ooooo:::::o r:::::r            s:::::ssss::::::s
+      T:::::::::T   e::::::::eeeeeeee  x:::::x  x:::::x        tt::::::::::::::t      c:::::::::::::::::co:::::::::::::::ol::::::lo:::::::::::::::o r:::::r            s::::::::::::::s
+      T:::::::::T    ee:::::::::::::e x:::::x    x:::::x         tt:::::::::::tt       cc:::::::::::::::c oo:::::::::::oo l::::::l oo:::::::::::oo  r:::::r             s:::::::::::ss
+      TTTTTTTTTTT      eeeeeeeeeeeeeexxxxxxx      xxxxxxx          ttttttttttt           cccccccccccccccc   ooooooooooo   llllllll   ooooooooooo    rrrrrrr              sssssssssss
+
+*/
+		"textLink.activeForeground": "#f2abbe", // accent even lighter
+		"textLink.foreground": "#ec7e9c", // Accent light (link)
+		// "textCodeBlock.background": "#ff0000",
+		/*
+
+
+               AAA                                         tttt            iiii                                                                               lllllll
+              A:::A                                     ttt:::t           i::::i                                                                              l:::::l
+             A:::::A                                    t:::::t            iiii                                                                               l:::::l
+            A:::::::A                                   t:::::t                                                                                               l:::::l
+           A:::::::::A            ccccccccccccccccttttttt:::::ttttttt    iiiiiii    ooooooooooo   nnnn  nnnnnnnn             cccccccccccccccc   ooooooooooo    l::::l    ooooooooooo   rrrrr   rrrrrrrrr       ssssssssss
+          A:::::A:::::A         cc:::::::::::::::ct:::::::::::::::::t    i:::::i  oo:::::::::::oo n:::nn::::::::nn         cc:::::::::::::::c oo:::::::::::oo  l::::l  oo:::::::::::oo r::::rrr:::::::::r    ss::::::::::s
+         A:::::A A:::::A       c:::::::::::::::::ct:::::::::::::::::t     i::::i o:::::::::::::::on::::::::::::::nn       c:::::::::::::::::co:::::::::::::::o l::::l o:::::::::::::::or:::::::::::::::::r ss:::::::::::::s
+        A:::::A   A:::::A     c:::::::cccccc:::::ctttttt:::::::tttttt     i::::i o:::::ooooo:::::onn:::::::::::::::n     c:::::::cccccc:::::co:::::ooooo:::::o l::::l o:::::ooooo:::::orr::::::rrrrr::::::rs::::::ssss:::::s
+       A:::::A     A:::::A    c::::::c     ccccccc      t:::::t           i::::i o::::o     o::::o  n:::::nnnn:::::n     c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r     r:::::r s:::::s  ssssss
+      A:::::AAAAAAAAA:::::A   c:::::c                   t:::::t           i::::i o::::o     o::::o  n::::n    n::::n     c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r     rrrrrrr   s::::::s
+     A:::::::::::::::::::::A  c:::::c                   t:::::t           i::::i o::::o     o::::o  n::::n    n::::n     c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r                  s::::::s
+    A:::::AAAAAAAAAAAAA:::::A c::::::c     ccccccc      t:::::t    tttttt i::::i o::::o     o::::o  n::::n    n::::n     c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r            ssssss   s:::::s
+   A:::::A             A:::::Ac:::::::cccccc:::::c      t::::::tttt:::::ti::::::io:::::ooooo:::::o  n::::n    n::::n     c:::::::cccccc:::::co:::::ooooo:::::ol::::::lo:::::ooooo:::::o r:::::r            s:::::ssss::::::s
+  A:::::A               A:::::Ac:::::::::::::::::c      tt::::::::::::::ti::::::io:::::::::::::::o  n::::n    n::::n      c:::::::::::::::::co:::::::::::::::ol::::::lo:::::::::::::::o r:::::r            s::::::::::::::s
+ A:::::A                 A:::::Acc:::::::::::::::c        tt:::::::::::tti::::::i oo:::::::::::oo   n::::n    n::::n       cc:::::::::::::::c oo:::::::::::oo l::::::l oo:::::::::::oo  r:::::r             s:::::::::::ss
+AAAAAAA                   AAAAAAA cccccccccccccccc          ttttttttttt  iiiiiiii   ooooooooooo     nnnnnn    nnnnnn         cccccccccccccccc   ooooooooooo   llllllll   ooooooooooo    rrrrrrr              sssssssssss
+*/
+		"toolbar.hoverBackground": "#be416280", // Background button, selection, menu border
+		"toolbar.activeBackground": "#e55279", // accent
+		/*
+
+
+BBBBBBBBBBBBBBBBB                            tttt               tttt                                                                                                                  tttt                                              lllllll
+B::::::::::::::::B                        ttt:::t            ttt:::t                                                                                                               ttt:::t                                              l:::::l
+B::::::BBBBBB:::::B                       t:::::t            t:::::t                                                                                                               t:::::t                                              l:::::l
+BB:::::B     B:::::B                      t:::::t            t:::::t                                                                                                               t:::::t                                              l:::::l
+  B::::B     B:::::Buuuuuu    uuuuuuttttttt:::::tttttttttttttt:::::ttttttt       ooooooooooo   nnnn  nnnnnnnn             cccccccccccccccc   ooooooooooo   nnnn  nnnnnnnn    ttttttt:::::ttttttt   rrrrr   rrrrrrrrr      ooooooooooo    l::::l
+  B::::B     B:::::Bu::::u    u::::ut:::::::::::::::::tt:::::::::::::::::t     oo:::::::::::oo n:::nn::::::::nn         cc:::::::::::::::c oo:::::::::::oo n:::nn::::::::nn  t:::::::::::::::::t   r::::rrr:::::::::r   oo:::::::::::oo  l::::l
+  B::::BBBBBB:::::B u::::u    u::::ut:::::::::::::::::tt:::::::::::::::::t    o:::::::::::::::on::::::::::::::nn       c:::::::::::::::::co:::::::::::::::on::::::::::::::nn t:::::::::::::::::t   r:::::::::::::::::r o:::::::::::::::o l::::l
+  B:::::::::::::BB  u::::u    u::::utttttt:::::::tttttttttttt:::::::tttttt    o:::::ooooo:::::onn:::::::::::::::n     c:::::::cccccc:::::co:::::ooooo:::::onn:::::::::::::::ntttttt:::::::tttttt   rr::::::rrrrr::::::ro:::::ooooo:::::o l::::l
+  B::::BBBBBB:::::B u::::u    u::::u      t:::::t            t:::::t          o::::o     o::::o  n:::::nnnn:::::n     c::::::c     ccccccco::::o     o::::o  n:::::nnnn:::::n      t:::::t          r:::::r     r:::::ro::::o     o::::o l::::l
+  B::::B     B:::::Bu::::u    u::::u      t:::::t            t:::::t          o::::o     o::::o  n::::n    n::::n     c:::::c             o::::o     o::::o  n::::n    n::::n      t:::::t          r:::::r     rrrrrrro::::o     o::::o l::::l
+  B::::B     B:::::Bu::::u    u::::u      t:::::t            t:::::t          o::::o     o::::o  n::::n    n::::n     c:::::c             o::::o     o::::o  n::::n    n::::n      t:::::t          r:::::r            o::::o     o::::o l::::l
+  B::::B     B:::::Bu:::::uuuu:::::u      t:::::t    tttttt  t:::::t    tttttto::::o     o::::o  n::::n    n::::n     c::::::c     ccccccco::::o     o::::o  n::::n    n::::n      t:::::t    ttttttr:::::r            o::::o     o::::o l::::l
+BB:::::BBBBBB::::::Bu:::::::::::::::uu    t::::::tttt:::::t  t::::::tttt:::::to:::::ooooo:::::o  n::::n    n::::n     c:::::::cccccc:::::co:::::ooooo:::::o  n::::n    n::::n      t::::::tttt:::::tr:::::r            o:::::ooooo:::::ol::::::l
+B:::::::::::::::::B  u:::::::::::::::u    tt::::::::::::::t  tt::::::::::::::to:::::::::::::::o  n::::n    n::::n      c:::::::::::::::::co:::::::::::::::o  n::::n    n::::n      tt::::::::::::::tr:::::r            o:::::::::::::::ol::::::l
+B::::::::::::::::B    uu::::::::uu:::u      tt:::::::::::tt    tt:::::::::::tt oo:::::::::::oo   n::::n    n::::n       cc:::::::::::::::c oo:::::::::::oo   n::::n    n::::n        tt:::::::::::ttr:::::r             oo:::::::::::oo l::::::l
+BBBBBBBBBBBBBBBBB       uuuuuuuu  uuuu        ttttttttttt        ttttttttttt     ooooooooooo     nnnnnn    nnnnnn         cccccccccccccccc   ooooooooooo     nnnnnn    nnnnnn          ttttttttttt  rrrrrrr               ooooooooooo   llllllll
+
+*/
+		"button.background": "#be416280", // Background button, selection, menu border
+		"button.hoverBackground": "#e55279", // accent
+		// "button.secondaryBackground": "#ec1515",
+		// "button.secondaryForeground": "#fff",
+		// "button.secondaryHoverBackground": "#45494e",
+		"button.foreground": "#e7e7e7", // foreground
+		"button.border": "#282e33",
+		"button.separator": "#00000078", // Black 50%
+		"checkbox.background": "#3a3a40", // Background input
+		"checkbox.border": "#282e33",
+		"checkbox.foreground": "#e7e7e7", // foreground
+		/*
+
+                                                                                          dddddddd
+DDDDDDDDDDDDD                                                                             d::::::d                                                                                                                                               tttt                                              lllllll
+D::::::::::::DDD                                                                          d::::::d                                                                                                                                            ttt:::t                                              l:::::l
+D:::::::::::::::DD                                                                        d::::::d                                                                                                                                            t:::::t                                              l:::::l
+DDD:::::DDDDD:::::D                                                                       d:::::d                                                                                                                                             t:::::t                                              l:::::l
+  D:::::D    D:::::D rrrrr   rrrrrrrrr      ooooooooooo   ppppp   ppppppppp       ddddddddd:::::d    ooooooooooo wwwwwww           wwwww           wwwwwwwnnnn  nnnnnnnn             cccccccccccccccc   ooooooooooo   nnnn  nnnnnnnn    ttttttt:::::ttttttt   rrrrr   rrrrrrrrr      ooooooooooo    l::::l
+  D:::::D     D:::::Dr::::rrr:::::::::r   oo:::::::::::oo p::::ppp:::::::::p    dd::::::::::::::d  oo:::::::::::oow:::::w         w:::::w         w:::::w n:::nn::::::::nn         cc:::::::::::::::c oo:::::::::::oo n:::nn::::::::nn  t:::::::::::::::::t   r::::rrr:::::::::r   oo:::::::::::oo  l::::l
+  D:::::D     D:::::Dr:::::::::::::::::r o:::::::::::::::op:::::::::::::::::p  d::::::::::::::::d o:::::::::::::::ow:::::w       w:::::::w       w:::::w  n::::::::::::::nn       c:::::::::::::::::co:::::::::::::::on::::::::::::::nn t:::::::::::::::::t   r:::::::::::::::::r o:::::::::::::::o l::::l
+  D:::::D     D:::::Drr::::::rrrrr::::::ro:::::ooooo:::::opp::::::ppppp::::::pd:::::::ddddd:::::d o:::::ooooo:::::o w:::::w     w:::::::::w     w:::::w   nn:::::::::::::::n     c:::::::cccccc:::::co:::::ooooo:::::onn:::::::::::::::ntttttt:::::::tttttt   rr::::::rrrrr::::::ro:::::ooooo:::::o l::::l
+  D:::::D     D:::::D r:::::r     r:::::ro::::o     o::::o p:::::p     p:::::pd::::::d    d:::::d o::::o     o::::o  w:::::w   w:::::w:::::w   w:::::w      n:::::nnnn:::::n     c::::::c     ccccccco::::o     o::::o  n:::::nnnn:::::n      t:::::t          r:::::r     r:::::ro::::o     o::::o l::::l
+  D:::::D     D:::::D r:::::r     rrrrrrro::::o     o::::o p:::::p     p:::::pd:::::d     d:::::d o::::o     o::::o   w:::::w w:::::w w:::::w w:::::w       n::::n    n::::n     c:::::c             o::::o     o::::o  n::::n    n::::n      t:::::t          r:::::r     rrrrrrro::::o     o::::o l::::l
+  D:::::D     D:::::D r:::::r            o::::o     o::::o p:::::p     p:::::pd:::::d     d:::::d o::::o     o::::o    w:::::w:::::w   w:::::w:::::w        n::::n    n::::n     c:::::c             o::::o     o::::o  n::::n    n::::n      t:::::t          r:::::r            o::::o     o::::o l::::l
+  D:::::D    D:::::D  r:::::r            o::::o     o::::o p:::::p    p::::::pd:::::d     d:::::d o::::o     o::::o     w:::::::::w     w:::::::::w         n::::n    n::::n     c::::::c     ccccccco::::o     o::::o  n::::n    n::::n      t:::::t    ttttttr:::::r            o::::o     o::::o l::::l
+DDD:::::DDDDD:::::D   r:::::r            o:::::ooooo:::::o p:::::ppppp:::::::pd::::::ddddd::::::ddo:::::ooooo:::::o      w:::::::w       w:::::::w          n::::n    n::::n     c:::::::cccccc:::::co:::::ooooo:::::o  n::::n    n::::n      t::::::tttt:::::tr:::::r            o:::::ooooo:::::ol::::::l
+D:::::::::::::::DD    r:::::r            o:::::::::::::::o p::::::::::::::::p  d:::::::::::::::::do:::::::::::::::o       w:::::w         w:::::w           n::::n    n::::n      c:::::::::::::::::co:::::::::::::::o  n::::n    n::::n      tt::::::::::::::tr:::::r            o:::::::::::::::ol::::::l
+D::::::::::::DDD      r:::::r             oo:::::::::::oo  p::::::::::::::pp    d:::::::::ddd::::d oo:::::::::::oo         w:::w           w:::w            n::::n    n::::n       cc:::::::::::::::c oo:::::::::::oo   n::::n    n::::n        tt:::::::::::ttr:::::r             oo:::::::::::oo l::::::l
+DDDDDDDDDDDDD         rrrrrrr               ooooooooooo    p::::::pppppppp       ddddddddd   ddddd   ooooooooooo            www             www             nnnnnn    nnnnnn         cccccccccccccccc   ooooooooooo     nnnnnn    nnnnnn          ttttttttttt  rrrrrrr               ooooooooooo   llllllll
+                                                           p:::::p
+                                                           p:::::p
+                                                          p:::::::p
+                                                          p:::::::p
+                                                          p:::::::p
+                                                          ppppppppp
+
+*/
+		"dropdown.background": "#3a3a40", // Background input
+		"dropdown.listBackground": "#262b31", // Background menu, widget
+		"dropdown.border": "#282e33",
+		"dropdown.foreground": "#e7e7e7", // foreground
+		/*
+
+
+IIIIIIIIII                                                             tttt                                                                               tttt                                              lllllll
+I::::::::I                                                          ttt:::t                                                                            ttt:::t                                              l:::::l
+I::::::::I                                                          t:::::t                                                                            t:::::t                                              l:::::l
+II::::::II                                                          t:::::t                                                                            t:::::t                                              l:::::l
+  I::::Innnn  nnnnnnnn    ppppp   ppppppppp   uuuuuu    uuuuuuttttttt:::::ttttttt             cccccccccccccccc   ooooooooooo   nnnn  nnnnnnnn    ttttttt:::::ttttttt   rrrrr   rrrrrrrrr      ooooooooooo    l::::l
+  I::::In:::nn::::::::nn  p::::ppp:::::::::p  u::::u    u::::ut:::::::::::::::::t           cc:::::::::::::::c oo:::::::::::oo n:::nn::::::::nn  t:::::::::::::::::t   r::::rrr:::::::::r   oo:::::::::::oo  l::::l
+  I::::In::::::::::::::nn p:::::::::::::::::p u::::u    u::::ut:::::::::::::::::t          c:::::::::::::::::co:::::::::::::::on::::::::::::::nn t:::::::::::::::::t   r:::::::::::::::::r o:::::::::::::::o l::::l
+  I::::Inn:::::::::::::::npp::::::ppppp::::::pu::::u    u::::utttttt:::::::tttttt         c:::::::cccccc:::::co:::::ooooo:::::onn:::::::::::::::ntttttt:::::::tttttt   rr::::::rrrrr::::::ro:::::ooooo:::::o l::::l
+  I::::I  n:::::nnnn:::::n p:::::p     p:::::pu::::u    u::::u      t:::::t               c::::::c     ccccccco::::o     o::::o  n:::::nnnn:::::n      t:::::t          r:::::r     r:::::ro::::o     o::::o l::::l
+  I::::I  n::::n    n::::n p:::::p     p:::::pu::::u    u::::u      t:::::t               c:::::c             o::::o     o::::o  n::::n    n::::n      t:::::t          r:::::r     rrrrrrro::::o     o::::o l::::l
+  I::::I  n::::n    n::::n p:::::p     p:::::pu::::u    u::::u      t:::::t               c:::::c             o::::o     o::::o  n::::n    n::::n      t:::::t          r:::::r            o::::o     o::::o l::::l
+  I::::I  n::::n    n::::n p:::::p    p::::::pu:::::uuuu:::::u      t:::::t    tttttt     c::::::c     ccccccco::::o     o::::o  n::::n    n::::n      t:::::t    ttttttr:::::r            o::::o     o::::o l::::l
+II::::::IIn::::n    n::::n p:::::ppppp:::::::pu:::::::::::::::uu    t::::::tttt:::::t     c:::::::cccccc:::::co:::::ooooo:::::o  n::::n    n::::n      t::::::tttt:::::tr:::::r            o:::::ooooo:::::ol::::::l
+I::::::::In::::n    n::::n p::::::::::::::::p  u:::::::::::::::u    tt::::::::::::::t      c:::::::::::::::::co:::::::::::::::o  n::::n    n::::n      tt::::::::::::::tr:::::r            o:::::::::::::::ol::::::l
+I::::::::In::::n    n::::n p::::::::::::::pp    uu::::::::uu:::u      tt:::::::::::tt       cc:::::::::::::::c oo:::::::::::oo   n::::n    n::::n        tt:::::::::::ttr:::::r             oo:::::::::::oo l::::::l
+IIIIIIIIIInnnnnn    nnnnnn p::::::pppppppp        uuuuuuuu  uuuu        ttttttttttt           cccccccccccccccc   ooooooooooo     nnnnnn    nnnnnn          ttttttttttt  rrrrrrr               ooooooooooo   llllllll
+                           p:::::p
+                           p:::::p
+                          p:::::::p
+                          p:::::::p
+                          p:::::::p
+                          ppppppppp
+
+*/
+		"input.background": "#3a3a40", // Background input
+		"input.border": "#262b31", // Background menu, widget
+		"input.foreground": "#e7e7e7", // foreground
+		"input.placeholderForeground": "#c39da7", // Foreground placeholder, description
+		// couleur des boutons actif dans la recherche
+		"inputOption.activeBackground": "#e55279", // accent
+		"inputOption.activeBorder": "#282e33",
+		"inputOption.activeForeground": "#fff",
+		"inputOption.hoverBackground": "#be416280", // Background button, selection, menu border
+		/*
+
+                                                                                           bbbbbbbb
+   SSSSSSSSSSSSSSS                                                          lllllll lllllllb::::::b                                                                                                                      tttt                                              lllllll
+ SS:::::::::::::::S                                                         l:::::l l:::::lb::::::b                                                                                                                   ttt:::t                                              l:::::l
+S:::::SSSSSS::::::S                                                         l:::::l l:::::lb::::::b                                                                                                                   t:::::t                                              l:::::l
+S:::::S     SSSSSSS                                                         l:::::l l:::::l b:::::b                                                                                                                   t:::::t                                              l:::::l
+S:::::S                ccccccccccccccccrrrrr   rrrrrrrrr      ooooooooooo    l::::l  l::::l b:::::bbbbbbbbb      aaaaaaaaaaaaa  rrrrr   rrrrrrrrr            cccccccccccccccc   ooooooooooo   nnnn  nnnnnnnn    ttttttt:::::ttttttt   rrrrr   rrrrrrrrr      ooooooooooo    l::::l
+S:::::S              cc:::::::::::::::cr::::rrr:::::::::r   oo:::::::::::oo  l::::l  l::::l b::::::::::::::bb    a::::::::::::a r::::rrr:::::::::r         cc:::::::::::::::c oo:::::::::::oo n:::nn::::::::nn  t:::::::::::::::::t   r::::rrr:::::::::r   oo:::::::::::oo  l::::l
+ S::::SSSS          c:::::::::::::::::cr:::::::::::::::::r o:::::::::::::::o l::::l  l::::l b::::::::::::::::b   aaaaaaaaa:::::ar:::::::::::::::::r       c:::::::::::::::::co:::::::::::::::on::::::::::::::nn t:::::::::::::::::t   r:::::::::::::::::r o:::::::::::::::o l::::l
+  SS::::::SSSSS    c:::::::cccccc:::::crr::::::rrrrr::::::ro:::::ooooo:::::o l::::l  l::::l b:::::bbbbb:::::::b           a::::arr::::::rrrrr::::::r     c:::::::cccccc:::::co:::::ooooo:::::onn:::::::::::::::ntttttt:::::::tttttt   rr::::::rrrrr::::::ro:::::ooooo:::::o l::::l
+    SSS::::::::SS  c::::::c     ccccccc r:::::r     r:::::ro::::o     o::::o l::::l  l::::l b:::::b    b::::::b    aaaaaaa:::::a r:::::r     r:::::r     c::::::c     ccccccco::::o     o::::o  n:::::nnnn:::::n      t:::::t          r:::::r     r:::::ro::::o     o::::o l::::l
+       SSSSSS::::S c:::::c              r:::::r     rrrrrrro::::o     o::::o l::::l  l::::l b:::::b     b:::::b  aa::::::::::::a r:::::r     rrrrrrr     c:::::c             o::::o     o::::o  n::::n    n::::n      t:::::t          r:::::r     rrrrrrro::::o     o::::o l::::l
+            S:::::Sc:::::c              r:::::r            o::::o     o::::o l::::l  l::::l b:::::b     b:::::b a::::aaaa::::::a r:::::r                 c:::::c             o::::o     o::::o  n::::n    n::::n      t:::::t          r:::::r            o::::o     o::::o l::::l
+            S:::::Sc::::::c     ccccccc r:::::r            o::::o     o::::o l::::l  l::::l b:::::b     b:::::ba::::a    a:::::a r:::::r                 c::::::c     ccccccco::::o     o::::o  n::::n    n::::n      t:::::t    ttttttr:::::r            o::::o     o::::o l::::l
+SSSSSSS     S:::::Sc:::::::cccccc:::::c r:::::r            o:::::ooooo:::::ol::::::ll::::::lb:::::bbbbbb::::::ba::::a    a:::::a r:::::r                 c:::::::cccccc:::::co:::::ooooo:::::o  n::::n    n::::n      t::::::tttt:::::tr:::::r            o:::::ooooo:::::ol::::::l
+S::::::SSSSSS:::::S c:::::::::::::::::c r:::::r            o:::::::::::::::ol::::::ll::::::lb::::::::::::::::b a:::::aaaa::::::a r:::::r                  c:::::::::::::::::co:::::::::::::::o  n::::n    n::::n      tt::::::::::::::tr:::::r            o:::::::::::::::ol::::::l
+S:::::::::::::::SS   cc:::::::::::::::c r:::::r             oo:::::::::::oo l::::::ll::::::lb:::::::::::::::b   a::::::::::aa:::ar:::::r                   cc:::::::::::::::c oo:::::::::::oo   n::::n    n::::n        tt:::::::::::ttr:::::r             oo:::::::::::oo l::::::l
+ SSSSSSSSSSSSSSS       cccccccccccccccc rrrrrrr               ooooooooooo   llllllllllllllllbbbbbbbbbbbbbbbb     aaaaaaaaaa  aaaarrrrrrr                     cccccccccccccccc   ooooooooooo     nnnnnn    nnnnnn          ttttttttttt  rrrrrrr               ooooooooooo   llllllll
+
+*/
+		"scrollbar.shadow": "#282e33",
+		"scrollbarSlider.activeBackground": "#be416280", // Background button, selection, menu border
+		"scrollbarSlider.background": "#ffffff26", // white 15%
+		"scrollbarSlider.hoverBackground": "#ffffff38", // white 25%
+		"editorOverviewRuler.background": "#282e33", // black
+		"editorOverviewRuler.border": "#282e33", // black
+		"editorOverviewRuler.findMatchForeground": "#3ff90c",
+		// "editorOverviewRuler.rangeHighlightForeground": "#ff00f2"
+		// "editorOverviewRuler.selectionHighlightForeground": "#00ccffda",
+		"editorOverviewRuler.wordHighlightForeground": "#3ff90c",
+		// "editorOverviewRuler.wordHighlightStrongForeground": "#ff0000",
+		/*
+
+
+                                                 dddddddd
+BBBBBBBBBBBBBBBBB                                d::::::d
+B::::::::::::::::B                               d::::::d
+B::::::BBBBBB:::::B                              d::::::d
+BB:::::B     B:::::B                             d:::::d
+  B::::B     B:::::B  aaaaaaaaaaaaa      ddddddddd:::::d    ggggggggg   ggggg    eeeeeeeeeeee
+  B::::B     B:::::B  a::::::::::::a   dd::::::::::::::d   g:::::::::ggg::::g  ee::::::::::::ee    ;;;;;;
+  B::::BBBBBB:::::B   aaaaaaaaa:::::a d::::::::::::::::d  g:::::::::::::::::g e::::::eeeee:::::ee  ;::::;
+  B:::::::::::::BB             a::::ad:::::::ddddd:::::d g::::::ggggg::::::gge::::::e     e:::::e  ;;;;;;
+  B::::BBBBBB:::::B     aaaaaaa:::::ad::::::d    d:::::d g:::::g     g:::::g e:::::::eeeee::::::e
+  B::::B     B:::::B  aa::::::::::::ad:::::d     d:::::d g:::::g     g:::::g e:::::::::::::::::e
+  B::::B     B:::::B a::::aaaa::::::ad:::::d     d:::::d g:::::g     g:::::g e::::::eeeeeeeeeee
+  B::::B     B:::::Ba::::a    a:::::ad:::::d     d:::::d g::::::g    g:::::g e:::::::e             ;;;;;;
+BB:::::BBBBBB::::::Ba::::a    a:::::ad::::::ddddd::::::ddg:::::::ggggg:::::g e::::::::e            ;::::;
+B:::::::::::::::::B a:::::aaaa::::::a d:::::::::::::::::d g::::::::::::::::g  e::::::::eeeeeeee    ;:::;;
+B::::::::::::::::B   a::::::::::aa:::a d:::::::::ddd::::d  gg::::::::::::::g   ee:::::::::::::e   ;:::;
+BBBBBBBBBBBBBBBBB     aaaaaaaaaa  aaaa  ddddddddd   ddddd    gggggggg::::::g     eeeeeeeeeeeeee   ;;;;
+                                                                     g:::::g
+                                                         gggggg      g:::::g
+                                                         g:::::gg   gg:::::g
+                                                          g::::::ggg:::::::g
+                                                           gg:::::::::::::g
+                                                             ggg::::::ggg
+                                                                gggggg
+*/
+		"badge.background": "#e55279", // accent
+		"badge.foreground": "#fff",
+		/*
+
+                                                                                                                                                            bbbbbbbb
+PPPPPPPPPPPPPPPPP                                                                                                                                           b::::::b
+P::::::::::::::::P                                                                                                                                          b::::::b
+P::::::PPPPPP:::::P                                                                                                                                         b::::::b
+PP:::::P     P:::::P                                                                                                                                         b:::::b
+  P::::P     P:::::Prrrrr   rrrrrrrrr      ooooooooooo      ggggggggg   gggggrrrrr   rrrrrrrrr       eeeeeeeeeeee        ssssssssss       ssssssssss         b:::::bbbbbbbbb      aaaaaaaaaaaaa  rrrrr   rrrrrrrrr
+  P::::P     P:::::Pr::::rrr:::::::::r   oo:::::::::::oo   g:::::::::ggg::::gr::::rrr:::::::::r    ee::::::::::::ee    ss::::::::::s    ss::::::::::s        b::::::::::::::bb    a::::::::::::a r::::rrr:::::::::r
+  P::::PPPPPP:::::P r:::::::::::::::::r o:::::::::::::::o g:::::::::::::::::gr:::::::::::::::::r  e::::::eeeee:::::eess:::::::::::::s ss:::::::::::::s       b::::::::::::::::b   aaaaaaaaa:::::ar:::::::::::::::::r
+  P:::::::::::::PP  rr::::::rrrrr::::::ro:::::ooooo:::::og::::::ggggg::::::ggrr::::::rrrrr::::::re::::::e     e:::::es::::::ssss:::::ss::::::ssss:::::s      b:::::bbbbb:::::::b           a::::arr::::::rrrrr::::::r
+  P::::PPPPPPPPP     r:::::r     r:::::ro::::o     o::::og:::::g     g:::::g  r:::::r     r:::::re:::::::eeeee::::::e s:::::s  ssssss  s:::::s  ssssss       b:::::b    b::::::b    aaaaaaa:::::a r:::::r     r:::::r
+  P::::P             r:::::r     rrrrrrro::::o     o::::og:::::g     g:::::g  r:::::r     rrrrrrre:::::::::::::::::e    s::::::s         s::::::s            b:::::b     b:::::b  aa::::::::::::a r:::::r     rrrrrrr
+  P::::P             r:::::r            o::::o     o::::og:::::g     g:::::g  r:::::r            e::::::eeeeeeeeeee        s::::::s         s::::::s         b:::::b     b:::::b a::::aaaa::::::a r:::::r
+  P::::P             r:::::r            o::::o     o::::og::::::g    g:::::g  r:::::r            e:::::::e           ssssss   s:::::s ssssss   s:::::s       b:::::b     b:::::ba::::a    a:::::a r:::::r
+PP::::::PP           r:::::r            o:::::ooooo:::::og:::::::ggggg:::::g  r:::::r            e::::::::e          s:::::ssss::::::ss:::::ssss::::::s      b:::::bbbbbb::::::ba::::a    a:::::a r:::::r
+P::::::::P           r:::::r            o:::::::::::::::o g::::::::::::::::g  r:::::r             e::::::::eeeeeeee  s::::::::::::::s s::::::::::::::s       b::::::::::::::::b a:::::aaaa::::::a r:::::r
+P::::::::P           r:::::r             oo:::::::::::oo   gg::::::::::::::g  r:::::r              ee:::::::::::::e   s:::::::::::ss   s:::::::::::ss        b:::::::::::::::b   a::::::::::aa:::ar:::::r
+PPPPPPPPPP           rrrrrrr               ooooooooooo       gggggggg::::::g  rrrrrrr                eeeeeeeeeeeeee    sssssssssss      sssssssssss          bbbbbbbbbbbbbbbb     aaaaaaaaaa  aaaarrrrrrr
+                                                                     g:::::g
+                                                         gggggg      g:::::g
+                                                         g:::::gg   gg:::::g
+                                                          g::::::ggg:::::::g
+                                                           gg:::::::::::::g
+                                                             ggg::::::ggg
+                                                                gggggg
+*/
+		"progressBar.background": "#e55279", // accent
+		/*
+
+                                                                                                                                             dddddddd
+LLLLLLLLLLL               iiii                            tttt                                                                               d::::::d              tttt
+L:::::::::L              i::::i                        ttt:::t                                                                               d::::::d           ttt:::t
+L:::::::::L               iiii                         t:::::t                                                                               d::::::d           t:::::t
+LL:::::::LL                                            t:::::t                                                                               d:::::d            t:::::t
+  L:::::L               iiiiiii     ssssssssss   ttttttt:::::ttttttt        ssssssssss          aaaaaaaaaaaaa  nnnn  nnnnnnnn        ddddddddd:::::d      ttttttt:::::ttttttt   rrrrr   rrrrrrrrr       eeeeeeeeeeee        eeeeeeeeeeee        ssssssssss
+  L:::::L               i:::::i   ss::::::::::s  t:::::::::::::::::t      ss::::::::::s         a::::::::::::a n:::nn::::::::nn    dd::::::::::::::d      t:::::::::::::::::t   r::::rrr:::::::::r    ee::::::::::::ee    ee::::::::::::ee    ss::::::::::s
+  L:::::L                i::::i ss:::::::::::::s t:::::::::::::::::t    ss:::::::::::::s        aaaaaaaaa:::::an::::::::::::::nn  d::::::::::::::::d      t:::::::::::::::::t   r:::::::::::::::::r  e::::::eeeee:::::ee e::::::eeeee:::::eess:::::::::::::s
+  L:::::L                i::::i s::::::ssss:::::stttttt:::::::tttttt    s::::::ssss:::::s                a::::ann:::::::::::::::nd:::::::ddddd:::::d      tttttt:::::::tttttt   rr::::::rrrrr::::::re::::::e     e:::::ee::::::e     e:::::es::::::ssss:::::s
+  L:::::L                i::::i  s:::::s  ssssss       t:::::t           s:::::s  ssssss          aaaaaaa:::::a  n:::::nnnn:::::nd::::::d    d:::::d            t:::::t          r:::::r     r:::::re:::::::eeeee::::::ee:::::::eeeee::::::e s:::::s  ssssss
+  L:::::L                i::::i    s::::::s            t:::::t             s::::::s             aa::::::::::::a  n::::n    n::::nd:::::d     d:::::d            t:::::t          r:::::r     rrrrrrre:::::::::::::::::e e:::::::::::::::::e    s::::::s
+  L:::::L                i::::i       s::::::s         t:::::t                s::::::s         a::::aaaa::::::a  n::::n    n::::nd:::::d     d:::::d            t:::::t          r:::::r            e::::::eeeeeeeeeee  e::::::eeeeeeeeeee        s::::::s
+  L:::::L         LLLLLL i::::i ssssss   s:::::s       t:::::t    ttttttssssss   s:::::s      a::::a    a:::::a  n::::n    n::::nd:::::d     d:::::d            t:::::t    ttttttr:::::r            e:::::::e           e:::::::e           ssssss   s:::::s
+LL:::::::LLLLLLLLL:::::Li::::::is:::::ssss::::::s      t::::::tttt:::::ts:::::ssss::::::s     a::::a    a:::::a  n::::n    n::::nd::::::ddddd::::::dd           t::::::tttt:::::tr:::::r            e::::::::e          e::::::::e          s:::::ssss::::::s
+L::::::::::::::::::::::Li::::::is::::::::::::::s       tt::::::::::::::ts::::::::::::::s      a:::::aaaa::::::a  n::::n    n::::n d:::::::::::::::::d           tt::::::::::::::tr:::::r             e::::::::eeeeeeee   e::::::::eeeeeeee  s::::::::::::::s
+L::::::::::::::::::::::Li::::::i s:::::::::::ss          tt:::::::::::tt s:::::::::::ss        a::::::::::aa:::a n::::n    n::::n  d:::::::::ddd::::d             tt:::::::::::ttr:::::r              ee:::::::::::::e    ee:::::::::::::e   s:::::::::::ss
+LLLLLLLLLLLLLLLLLLLLLLLLiiiiiiii  sssssssssss              ttttttttttt    sssssssssss           aaaaaaaaaa  aaaa nnnnnn    nnnnnn   ddddddddd   ddddd               ttttttttttt  rrrrrrr                eeeeeeeeeeeeee      eeeeeeeeeeeeee    sssssssssss
+
+Control tree and list in palette
+
+*/
+		"list.activeSelectionBackground": "#be416280", // Background button, selection, menu border
+		"list.activeSelectionForeground": "#fff",
+		"list.activeSelectionIconForeground": "#f2abbe", // Accent even lighter (link)
+		"list.inactiveSelectionBackground": "#e552791f",
+		"list.inactiveSelectionForeground": "#e7e7e7", // foreground
+		"list.dropBackground": "#ffffff38", // white 25%
+		"list.focusBackground": "#ffffff00", // transparent
+		"list.focusForeground": "#fff",
+		// color of matched element in palette
+		"list.highlightForeground": "#ff4794", // Highlight flashy
+		"list.focusOutline": "#e55279", // accent
+		"list.focusAndSelectionOutline": "#e55279", // accent
+		"list.inactiveFocusBackground": "#ffffff00", // transparent
+		"list.inactiveFocusOutline": "#99a3d126", // Focused, hover
+		"list.hoverBackground": "#99a3d126", // Focused, hover
+		"list.hoverForeground": "#fff",
+		// background color of search widget in explorer tree
+		"listFilterWidget.background": "#262b31", // Background menu, widget
+		"listFilterWidget.outline": "#0ee607",
+		"listFilterWidget.noMatchesOutline": "#fb1100",
+		"list.filterMatchBackground": "#e55279", // accent
+		// "list.filterMatchBorder": "#ff0000",
+		// "list.deemphasizedForeground": "#ff0000",
+		"tree.indentGuidesStroke": "#e55279", // accent
+		// "tree.tableColumnsBorder": "#ff0000",
+		// "tree.tableOddRowsBackground": "#ff0000",
+		/*
+
+
+               AAA                                         tttt            iiii                            iiii          tttt
+              A:::A                                     ttt:::t           i::::i                          i::::i      ttt:::t
+             A:::::A                                    t:::::t            iiii                            iiii       t:::::t
+            A:::::::A                                   t:::::t                                                       t:::::t
+           A:::::::::A            ccccccccccccccccttttttt:::::ttttttt    iiiiiiivvvvvvv           vvvvvvviiiiiiittttttt:::::tttttttyyyyyyy           yyyyyyy
+          A:::::A:::::A         cc:::::::::::::::ct:::::::::::::::::t    i:::::i v:::::v         v:::::v i:::::it:::::::::::::::::t y:::::y         y:::::y
+         A:::::A A:::::A       c:::::::::::::::::ct:::::::::::::::::t     i::::i  v:::::v       v:::::v   i::::it:::::::::::::::::t  y:::::y       y:::::y
+        A:::::A   A:::::A     c:::::::cccccc:::::ctttttt:::::::tttttt     i::::i   v:::::v     v:::::v    i::::itttttt:::::::tttttt   y:::::y     y:::::y
+       A:::::A     A:::::A    c::::::c     ccccccc      t:::::t           i::::i    v:::::v   v:::::v     i::::i      t:::::t          y:::::y   y:::::y
+      A:::::AAAAAAAAA:::::A   c:::::c                   t:::::t           i::::i     v:::::v v:::::v      i::::i      t:::::t           y:::::y y:::::y
+     A:::::::::::::::::::::A  c:::::c                   t:::::t           i::::i      v:::::v:::::v       i::::i      t:::::t            y:::::y:::::y
+    A:::::AAAAAAAAAAAAA:::::A c::::::c     ccccccc      t:::::t    tttttt i::::i       v:::::::::v        i::::i      t:::::t    tttttt   y:::::::::y
+   A:::::A             A:::::Ac:::::::cccccc:::::c      t::::::tttt:::::ti::::::i       v:::::::v        i::::::i     t::::::tttt:::::t    y:::::::y
+  A:::::A               A:::::Ac:::::::::::::::::c      tt::::::::::::::ti::::::i        v:::::v         i::::::i     tt::::::::::::::t     y:::::y
+ A:::::A                 A:::::Acc:::::::::::::::c        tt:::::::::::tti::::::i         v:::v          i::::::i       tt:::::::::::tt    y:::::y
+AAAAAAA                   AAAAAAA cccccccccccccccc          ttttttttttt  iiiiiiii          vvv           iiiiiiii         ttttttttttt     y:::::y
+                                                                                                                                         y:::::y
+                                                                                                                                        y:::::y
+                                                                                                                                       y:::::y
+                                                                                                                                      y:::::y
+                                                                                                                                     yyyyyyy
+
+
+*/
+		"activityBar.background": "#282e33",
+		"activityBar.dropBorder": "#ff4794", // highlight flashy
+		"activityBar.foreground": "#ec7e9c", // Accent light (link)
+		"activityBar.border": "#282e33",
+		"activityBar.activeBorder": "#ec7e9c", // Accent light (link)
+		"activityBar.activeFocusBorder": "#fff", // highlight flashy
+		"activityBar.activeBackground": "#282e33",
+		"activityBar.inactiveForeground": "#ffffff4d", // White 35%
+		"activityBarBadge.background": "#e55279", // accent
+		"activityBarBadge.foreground": "#fff",
+		// "activityBarItem.settingsProfilesForeground": "#ff0000",
+		// "activityBarItem.settingsProfilesBackground": "#ff0000",
+		// "activityBarItem.settingsProfilesHoverForeground": "#ff0000",
+		/*
+
+                                       dddddddd
+   SSSSSSSSSSSSSSS   iiii              d::::::d                         BBBBBBBBBBBBBBBBB
+ SS:::::::::::::::S i::::i             d::::::d                         B::::::::::::::::B
+S:::::SSSSSS::::::S  iiii              d::::::d                         B::::::BBBBBB:::::B
+S:::::S     SSSSSSS                    d:::::d                          BB:::::B     B:::::B
+S:::::S            iiiiiii     ddddddddd:::::d     eeeeeeeeeeee           B::::B     B:::::B  aaaaaaaaaaaaa  rrrrr   rrrrrrrrr
+S:::::S            i:::::i   dd::::::::::::::d   ee::::::::::::ee         B::::B     B:::::B  a::::::::::::a r::::rrr:::::::::r
+ S::::SSSS          i::::i  d::::::::::::::::d  e::::::eeeee:::::ee       B::::BBBBBB:::::B   aaaaaaaaa:::::ar:::::::::::::::::r
+  SS::::::SSSSS     i::::i d:::::::ddddd:::::d e::::::e     e:::::e       B:::::::::::::BB             a::::arr::::::rrrrr::::::r
+    SSS::::::::SS   i::::i d::::::d    d:::::d e:::::::eeeee::::::e       B::::BBBBBB:::::B     aaaaaaa:::::a r:::::r     r:::::r
+       SSSSSS::::S  i::::i d:::::d     d:::::d e:::::::::::::::::e        B::::B     B:::::B  aa::::::::::::a r:::::r     rrrrrrr
+            S:::::S i::::i d:::::d     d:::::d e::::::eeeeeeeeeee         B::::B     B:::::B a::::aaaa::::::a r:::::r
+            S:::::S i::::i d:::::d     d:::::d e:::::::e                  B::::B     B:::::Ba::::a    a:::::a r:::::r
+SSSSSSS     S:::::Si::::::id::::::ddddd::::::dde::::::::e               BB:::::BBBBBB::::::Ba::::a    a:::::a r:::::r
+S::::::SSSSSS:::::Si::::::i d:::::::::::::::::d e::::::::eeeeeeee       B:::::::::::::::::B a:::::aaaa::::::a r:::::r
+S:::::::::::::::SS i::::::i  d:::::::::ddd::::d  ee:::::::::::::e       B::::::::::::::::B   a::::::::::aa:::ar:::::r
+ SSSSSSSSSSSSSSS   iiiiiiii   ddddddddd   ddddd    eeeeeeeeeeeeee       BBBBBBBBBBBBBBBBB     aaaaaaaaaa  aaaarrrrrrr
+
+*/
+		"sideBar.background": "#1e2224", // editor background
+		"sideBar.border": "#282e33",
+		"sideBar.foreground": "#e7e7e7", // foreground
+		"sideBar.dropBackground": "#e5527940", // Accent 25%
+		"sideBarTitle.foreground": "#fff",
+		"sideBarSectionHeader.background": "#282e33",
+		"sideBarSectionHeader.border": "#282e33",
+		"sideBarSectionHeader.foreground": "#ec7e9c", // Accent light (link)
+		/*
+
+
+MMMMMMMM               MMMMMMMM  iiii                     iiii
+M:::::::M             M:::::::M i::::i                   i::::i
+M::::::::M           M::::::::M  iiii                     iiii
+M:::::::::M         M:::::::::M
+M::::::::::M       M::::::::::Miiiiiiinnnn  nnnnnnnn    iiiiiii    mmmmmmm    mmmmmmm     aaaaaaaaaaaaa  ppppp   ppppppppp
+M:::::::::::M     M:::::::::::Mi:::::in:::nn::::::::nn  i:::::i  mm:::::::m  m:::::::mm   a::::::::::::a p::::ppp:::::::::p
+M:::::::M::::M   M::::M:::::::M i::::in::::::::::::::nn  i::::i m::::::::::mm::::::::::m  aaaaaaaaa:::::ap:::::::::::::::::p
+M::::::M M::::M M::::M M::::::M i::::inn:::::::::::::::n i::::i m::::::::::::::::::::::m           a::::app::::::ppppp::::::p
+M::::::M  M::::M::::M  M::::::M i::::i  n:::::nnnn:::::n i::::i m:::::mmm::::::mmm:::::m    aaaaaaa:::::a p:::::p     p:::::p
+M::::::M   M:::::::M   M::::::M i::::i  n::::n    n::::n i::::i m::::m   m::::m   m::::m  aa::::::::::::a p:::::p     p:::::p
+M::::::M    M:::::M    M::::::M i::::i  n::::n    n::::n i::::i m::::m   m::::m   m::::m a::::aaaa::::::a p:::::p     p:::::p
+M::::::M     MMMMM     M::::::M i::::i  n::::n    n::::n i::::i m::::m   m::::m   m::::ma::::a    a:::::a p:::::p    p::::::p
+M::::::M               M::::::Mi::::::i n::::n    n::::ni::::::im::::m   m::::m   m::::ma::::a    a:::::a p:::::ppppp:::::::p
+M::::::M               M::::::Mi::::::i n::::n    n::::ni::::::im::::m   m::::m   m::::ma:::::aaaa::::::a p::::::::::::::::p
+M::::::M               M::::::Mi::::::i n::::n    n::::ni::::::im::::m   m::::m   m::::m a::::::::::aa:::ap::::::::::::::pp
+MMMMMMMM               MMMMMMMMiiiiiiii nnnnnn    nnnnnniiiiiiiimmmmmm   mmmmmm   mmmmmm  aaaaaaaaaa  aaaap::::::pppppppp
+                                                                                                          p:::::p
+                                                                                                          p:::::p
+                                                                                                         p:::::::p
+                                                                                                         p:::::::p
+                                                                                                         p:::::::p
+                                                                                                         ppppppppp
+
+*/
+		"minimap.background": "#282e33",
+		"minimap.findMatchHighlight": "#3ff90c", // Highlight flashy
+		"minimap.errorHighlight": "#ff3953",
+		"minimap.selectionHighlight": "#ff479466", // Highlight flashy 40%
+		"minimap.warningHighlight": "#ffd000",
+		// put the cursor over a keyword to see
+		"minimap.selectionOccurrenceHighlight": "#3ff90c", // Highlight flashy
+		"minimap.foregroundOpacity": "#282e33",
+		"minimapSlider.background": "#ffffff26",
+		"minimapSlider.hoverBackground": "#ffffff38", // white 25%
+		"minimapSlider.activeBackground": "#be416280", // Background button, selection, menu border
+		"minimapGutter.addedBackground": "#729f12",
+		"minimapGutter.deletedBackground": "#ae1b22",
+		"minimapGutter.modifiedBackground": "#0c7d9d",
+		/*
+
+                                  dddddddd                                                                                                                                                                                                                                                           bbbbbbbb
+EEEEEEEEEEEEEEEEEEEEEE            d::::::d  iiii          tttt                                                            GGGGGGGGGGGGG                                                                                                     &&&&&&&&&&         TTTTTTTTTTTTTTTTTTTTTTT               b::::::b
+E::::::::::::::::::::E            d::::::d i::::i      ttt:::t                                                         GGG::::::::::::G                                                                                                    &::::::::::&        T:::::::::::::::::::::T               b::::::b
+E::::::::::::::::::::E            d::::::d  iiii       t:::::t                                                       GG:::::::::::::::G                                                                                                   &::::&&&:::::&       T:::::::::::::::::::::T               b::::::b
+EE::::::EEEEEEEEE::::E            d:::::d              t:::::t                                                      G:::::GGGGGGGG::::G                                                                                                  &::::&   &::::&       T:::::TT:::::::TT:::::T                b:::::b
+  E:::::E       EEEEEE    ddddddddd:::::d iiiiiiittttttt:::::ttttttt       ooooooooooo   rrrrr   rrrrrrrrr         G:::::G       GGGGGGrrrrr   rrrrrrrrr      ooooooooooo   uuuuuu    uuuuuu ppppp   ppppppppp       ssssssssss          &::::&   &::::&       TTTTTT  T:::::T  TTTTTTaaaaaaaaaaaaa   b:::::bbbbbbbbb        ssssssssss
+  E:::::E               dd::::::::::::::d i:::::it:::::::::::::::::t     oo:::::::::::oo r::::rrr:::::::::r       G:::::G              r::::rrr:::::::::r   oo:::::::::::oo u::::u    u::::u p::::ppp:::::::::p    ss::::::::::s          &::::&&&::::&                T:::::T        a::::::::::::a  b::::::::::::::bb    ss::::::::::s
+  E::::::EEEEEEEEEE    d::::::::::::::::d  i::::it:::::::::::::::::t    o:::::::::::::::or:::::::::::::::::r      G:::::G              r:::::::::::::::::r o:::::::::::::::ou::::u    u::::u p:::::::::::::::::p ss:::::::::::::s         &::::::::::&                 T:::::T        aaaaaaaaa:::::a b::::::::::::::::b ss:::::::::::::s
+  E:::::::::::::::E   d:::::::ddddd:::::d  i::::itttttt:::::::tttttt    o:::::ooooo:::::orr::::::rrrrr::::::r     G:::::G    GGGGGGGGGGrr::::::rrrrr::::::ro:::::ooooo:::::ou::::u    u::::u pp::::::ppppp::::::ps::::::ssss:::::s         &:::::::&&                  T:::::T                 a::::a b:::::bbbbb:::::::bs::::::ssss:::::s
+  E:::::::::::::::E   d::::::d    d:::::d  i::::i      t:::::t          o::::o     o::::o r:::::r     r:::::r     G:::::G    G::::::::G r:::::r     r:::::ro::::o     o::::ou::::u    u::::u  p:::::p     p:::::p s:::::s  ssssss        &::::::::&   &&&&             T:::::T          aaaaaaa:::::a b:::::b    b::::::b s:::::s  ssssss
+  E::::::EEEEEEEEEE   d:::::d     d:::::d  i::::i      t:::::t          o::::o     o::::o r:::::r     rrrrrrr     G:::::G    GGGGG::::G r:::::r     rrrrrrro::::o     o::::ou::::u    u::::u  p:::::p     p:::::p   s::::::s            &:::::&&::&  &:::&             T:::::T        aa::::::::::::a b:::::b     b:::::b   s::::::s
+  E:::::E             d:::::d     d:::::d  i::::i      t:::::t          o::::o     o::::o r:::::r                 G:::::G        G::::G r:::::r            o::::o     o::::ou::::u    u::::u  p:::::p     p:::::p      s::::::s        &:::::&  &::&&:::&&             T:::::T       a::::aaaa::::::a b:::::b     b:::::b      s::::::s
+  E:::::E       EEEEEEd:::::d     d:::::d  i::::i      t:::::t    tttttto::::o     o::::o r:::::r                  G:::::G       G::::G r:::::r            o::::o     o::::ou:::::uuuu:::::u  p:::::p    p::::::pssssss   s:::::s      &:::::&   &:::::&               T:::::T      a::::a    a:::::a b:::::b     b:::::bssssss   s:::::s
+EE::::::EEEEEEEE:::::Ed::::::ddddd::::::ddi::::::i     t::::::tttt:::::to:::::ooooo:::::o r:::::r                   G:::::GGGGGGGG::::G r:::::r            o:::::ooooo:::::ou:::::::::::::::uup:::::ppppp:::::::ps:::::ssss::::::s     &:::::&    &::::&             TT:::::::TT    a::::a    a:::::a b:::::bbbbbb::::::bs:::::ssss::::::s
+E::::::::::::::::::::E d:::::::::::::::::di::::::i     tt::::::::::::::to:::::::::::::::o r:::::r                    GG:::::::::::::::G r:::::r            o:::::::::::::::o u:::::::::::::::up::::::::::::::::p s::::::::::::::s      &::::::&&&&::::::&&           T:::::::::T    a:::::aaaa::::::a b::::::::::::::::b s::::::::::::::s
+E::::::::::::::::::::E  d:::::::::ddd::::di::::::i       tt:::::::::::tt oo:::::::::::oo  r:::::r                      GGG::::::GGG:::G r:::::r             oo:::::::::::oo   uu::::::::uu:::up::::::::::::::pp   s:::::::::::ss        &&::::::::&&&::::&           T:::::::::T     a::::::::::aa:::ab:::::::::::::::b   s:::::::::::ss
+EEEEEEEEEEEEEEEEEEEEEE   ddddddddd   dddddiiiiiiii         ttttttttttt     ooooooooooo    rrrrrrr                         GGGGGG   GGGG rrrrrrr               ooooooooooo       uuuuuuuu  uuuup::::::pppppppp      sssssssssss            &&&&&&&&   &&&&&           TTTTTTTTTTT      aaaaaaaaaa  aaaabbbbbbbbbbbbbbbb     sssssssssss
+                                                                                                                                                                                              p:::::p
+                                                                                                                                                                                              p:::::p
+                                                                                                                                                                                             p:::::::p
+                                                                                                                                                                                             p:::::::p
+                                                                                                                                                                                             p:::::::p
+                                                                                                                                                                                             ppppppppp
+
+*/
+		"editorGroup.border": "#ffffff38", // white 25%
+		"editorGroup.dropBackground": "#e5527940", // accent 25%
+		"editorGroupHeader.noTabsBackground": "#262b31", // Background menu, widget
+		"editorGroupHeader.tabsBackground": "#282e33",
+		"editorGroupHeader.tabsBorder": "#e55279", // accent
+		"editorGroupHeader.border": "#282e33",
+		"editorGroup.emptyBackground": "#262b31", // Background menu, widget
+		"editorGroup.focusedEmptyBorder": "#e55279", // accent
+		"editorGroup.dropIntoPromptForeground": "#ffffff7d", // white 50%
+		"editorGroup.dropIntoPromptBackground": "#00000078", // black 50%
+		"editorGroup.dropIntoPromptBorder": "#282e33",
+		"tab.border": "#282e33",
+		"tab.activeBackground": "#e5527980", // accent 50%
+		"tab.activeForeground": "#e7e7e7", // foreground
+		"tab.activeBorder": "#ffffff00", // transparent
+		"tab.activeBorderTop": "#ffffff00", // transparent
+		"tab.unfocusedActiveBackground": "#262b31", // Background menu, widget
+		"tab.unfocusedActiveBorder": "#f2abbe", // Accent even lighter (link)
+		"tab.unfocusedActiveBorderTop": "#f2abbe", // Accent even lighter (link)
+		"tab.unfocusedActiveForeground": "#e7e7e7", // foreground
+		"tab.unfocusedInactiveBackground": "#282e33",
+		"tab.unfocusedInactiveForeground": "#ffffff7d", // white 50%
+		"tab.lastPinnedBorder": "#e55279", // accent
+		"tab.inactiveBackground": "#1e2224", // Editor background
+		"tab.inactiveForeground": "#e7e7e7", // foreground
+		"tab.unfocusedHoverBackground": "#be416280", // Background button, selection, menu border
+		"tab.hoverBackground": "#be416280", // Background button, selection, menu border
+		"tab.hoverForeground": "#e7e7e7", // foreground
+		"tab.unfocusedHoverForeground": "#e7e7e7", // foreground
+		"tab.hoverBorder": "#f2abbe", // Accent even lighter (link)
+		"tab.unfocusedHoverBorder": "#f2abbe", // Accent even lighter (link)
+		"sideBySideEditor.verticalBorder": "#ffffff38", // white 25%
+		"sideBySideEditor.horizontalBorder": "#ffffff38", // white 25%
+		/*
+
+                                  dddddddd
+EEEEEEEEEEEEEEEEEEEEEE            d::::::d  iiii          tttt                                                                                         lllllll
+E::::::::::::::::::::E            d::::::d i::::i      ttt:::t                                                                                         l:::::l
+E::::::::::::::::::::E            d::::::d  iiii       t:::::t                                                                                         l:::::l
+EE::::::EEEEEEEEE::::E            d:::::d              t:::::t                                                                                         l:::::l
+  E:::::E       EEEEEE    ddddddddd:::::d iiiiiiittttttt:::::ttttttt       ooooooooooo   rrrrr   rrrrrrrrr            cccccccccccccccc   ooooooooooo    l::::l    ooooooooooo   rrrrr   rrrrrrrrr       ssssssssss
+  E:::::E               dd::::::::::::::d i:::::it:::::::::::::::::t     oo:::::::::::oo r::::rrr:::::::::r         cc:::::::::::::::c oo:::::::::::oo  l::::l  oo:::::::::::oo r::::rrr:::::::::r    ss::::::::::s
+  E::::::EEEEEEEEEE    d::::::::::::::::d  i::::it:::::::::::::::::t    o:::::::::::::::or:::::::::::::::::r       c:::::::::::::::::co:::::::::::::::o l::::l o:::::::::::::::or:::::::::::::::::r ss:::::::::::::s
+  E:::::::::::::::E   d:::::::ddddd:::::d  i::::itttttt:::::::tttttt    o:::::ooooo:::::orr::::::rrrrr::::::r     c:::::::cccccc:::::co:::::ooooo:::::o l::::l o:::::ooooo:::::orr::::::rrrrr::::::rs::::::ssss:::::s
+  E:::::::::::::::E   d::::::d    d:::::d  i::::i      t:::::t          o::::o     o::::o r:::::r     r:::::r     c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r     r:::::r s:::::s  ssssss
+  E::::::EEEEEEEEEE   d:::::d     d:::::d  i::::i      t:::::t          o::::o     o::::o r:::::r     rrrrrrr     c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r     rrrrrrr   s::::::s
+  E:::::E             d:::::d     d:::::d  i::::i      t:::::t          o::::o     o::::o r:::::r                 c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r                  s::::::s
+  E:::::E       EEEEEEd:::::d     d:::::d  i::::i      t:::::t    tttttto::::o     o::::o r:::::r                 c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r            ssssss   s:::::s
+EE::::::EEEEEEEE:::::Ed::::::ddddd::::::ddi::::::i     t::::::tttt:::::to:::::ooooo:::::o r:::::r                 c:::::::cccccc:::::co:::::ooooo:::::ol::::::lo:::::ooooo:::::o r:::::r            s:::::ssss::::::s
+E::::::::::::::::::::E d:::::::::::::::::di::::::i     tt::::::::::::::to:::::::::::::::o r:::::r                  c:::::::::::::::::co:::::::::::::::ol::::::lo:::::::::::::::o r:::::r            s::::::::::::::s
+E::::::::::::::::::::E  d:::::::::ddd::::di::::::i       tt:::::::::::tt oo:::::::::::oo  r:::::r                   cc:::::::::::::::c oo:::::::::::oo l::::::l oo:::::::::::oo  r:::::r             s:::::::::::ss
+EEEEEEEEEEEEEEEEEEEEEE   ddddddddd   dddddiiiiiiii         ttttttttttt     ooooooooooo    rrrrrrr                     cccccccccccccccc   ooooooooooo   llllllll   ooooooooooo    rrrrrrr              sssssssssss
+
+*/
+		"editor.background": "#1e2224", // Editor background
+		"editor.foreground": "#e7e7e7", // foreground
+		"editorLineNumber.foreground": "#ffffff4d", // white 35%
+		"editorLineNumber.activeForeground": "#f2abbe", // 'Accent even lighter (link)'
+		"editorCursor.background": "#282e33",
+		"editorCursor.foreground": "#ff4794", // Highlight flashy
+		"editor.selectionBackground": "#ff479466", // Highlight flashy 40%
+		"editor.selectionForeground": "#e7e7e7", // foreground
+		"editor.inactiveSelectionBackground": "#ffffff38", // white 25%
+		// controlled by setting editor.selectionHighlight
+		// see bug report : https://github.com/microsoft/vscode/issues/167766
+		"editor.selectionHighlightBackground": "#ffffff00", // transparent
+		"editor.selectionHighlightBorder": "#ff4794", // Highlight flashy
+		// controlled by setting editor.occurrencesHighlight
+		"editor.wordHighlightBackground": "#ffffff00", // transparent
+		"editor.wordHighlightBorder": "#e5050500", // transparent
+		"editor.wordHighlightStrongBackground": "#ffffff00", // transparent
+		"editor.wordHighlightStrongBorder": "#ffffff00", // transparent
+		"editor.findMatchBackground": "#ffffff00", // transparent
+		"editor.findMatchBorder": "#3ff90c", // green
+		"editor.findMatchHighlightBackground": "#3ff90c38",
+		"editor.findMatchHighlightBorder": "#ffffff00", // transparent
+		"editor.findRangeHighlightBackground": "#45709043", // blue transparent
+		"editor.findRangeHighlightBorder": "#ffffff00", // transparent
+		"searchEditor.findMatchBackground": "#ff0051", // red
+		"searchEditor.findMatchBorder": "#3ff90c", // green
+		"editor.hoverHighlightBackground": "#e5527980", // Accent 50%
+		"editor.lineHighlightBackground": "#ffffff14", // White 10%
+		"editor.lineHighlightBorder": "#ffffff14", // White 10%
+		"editorUnicodeHighlight.border": "#ffae0055",
+		"editorUnicodeHighlight.background": "#ffffff00", // transparent
+		"editorLink.activeForeground": "#3caeff",
+		// see bug https://github.com/microsoft/vscode/issues/167785
+		"editor.rangeHighlightBackground": "#3ff90c15", // green
+		"editor.rangeHighlightBorder": "#ffffff00", // transparent
+		"editor.symbolHighlightBackground": "#ffffff00", // transparent
+		"editor.symbolHighlightBorder": "#3ff90c", // green
+		"editorWhitespace.foreground": "#ffffff38", // white 25%
+		"editorIndentGuide.background": "#ffffff38", // white 25%
+		"editorIndentGuide.activeBackground": "#ffffff4d", // white 35%
+		"editorInlayHint.background": "#3a3a40", // Background input
+		"editorInlayHint.foreground": "#ffffff7d", // White 50%
+		"editorInlayHint.typeForeground": "#7b9cb9",
+		// "editorInlayHint.typeBackground": "#ff0000",
+		"editorInlayHint.parameterForeground": "#b4c17b",
+		// "editorInlayHint.parameterBackground": "#ff0000",
+		"editorRuler.foreground": "#ffffff38", // white 25%
+		// auto rename html tag
+		"editor.linkedEditingBackground": "#0078c871", // blue
+		"editorCodeLens.foreground": "#7b9cb9",
+		"editorBracketMatch.background": "#282e33", // black
+		"editorBracketMatch.border": "#e7e7e7", // foreground
+		"editorBracketHighlight.foreground1": "#dbdb46",
+		"editorBracketHighlight.foreground2": "#c422ff",
+		"editorBracketHighlight.foreground3": "#ff9b49",
+		"editorBracketHighlight.foreground4": "#60b5ff",
+		"editorBracketHighlight.foreground5": "#7dce4a",
+		"editorBracketHighlight.foreground6": "#ce4a4a",
+		"editorBracketHighlight.unexpectedBracket.foreground": "#e7e7e7",
+		"editor.foldBackground": "#e5527980", // Accent 50%
+		"editorError.foreground": "#ff3d61",
+		"editorError.border": "#ffffff00", // transparent
+		"editorError.background": "#ffffff00", // transparent
+		"editorWarning.foreground": "#e7da24",
+		"editorWarning.border": "#ffffff00", // transparent
+		"editorWarning.background": "#ffffff00", // transparent
+		"editorInfo.foreground": "#5cb1fb",
+		"editorInfo.border": "#ffffff00", // transparent
+		"editorInfo.background": "#ffffff00", // transparent
+		"editorUnnecessaryCode.opacity": "#00000078", // black 50%
+		/*
+
+
+        GGGGGGGGGGGGG                         tttt               tttt
+     GGG::::::::::::G                      ttt:::t            ttt:::t
+   GG:::::::::::::::G                      t:::::t            t:::::t
+  G:::::GGGGGGGG::::G                      t:::::t            t:::::t
+ G:::::G       GGGGGGuuuuuu    uuuuuuttttttt:::::tttttttttttttt:::::ttttttt        eeeeeeeeeeee    rrrrr   rrrrrrrrr
+G:::::G              u::::u    u::::ut:::::::::::::::::tt:::::::::::::::::t      ee::::::::::::ee  r::::rrr:::::::::r
+G:::::G              u::::u    u::::ut:::::::::::::::::tt:::::::::::::::::t     e::::::eeeee:::::eer:::::::::::::::::r
+G:::::G    GGGGGGGGGGu::::u    u::::utttttt:::::::tttttttttttt:::::::tttttt    e::::::e     e:::::err::::::rrrrr::::::r
+G:::::G    G::::::::Gu::::u    u::::u      t:::::t            t:::::t          e:::::::eeeee::::::e r:::::r     r:::::r
+G:::::G    GGGGG::::Gu::::u    u::::u      t:::::t            t:::::t          e:::::::::::::::::e  r:::::r     rrrrrrr
+G:::::G        G::::Gu::::u    u::::u      t:::::t            t:::::t          e::::::eeeeeeeeeee   r:::::r
+ G:::::G       G::::Gu:::::uuuu:::::u      t:::::t    tttttt  t:::::t    tttttte:::::::e            r:::::r
+  G:::::GGGGGGGG::::Gu:::::::::::::::uu    t::::::tttt:::::t  t::::::tttt:::::te::::::::e           r:::::r
+   GG:::::::::::::::G u:::::::::::::::u    tt::::::::::::::t  tt::::::::::::::t e::::::::eeeeeeee   r:::::r
+     GGG::::::GGG:::G  uu::::::::uu:::u      tt:::::::::::tt    tt:::::::::::tt  ee:::::::::::::e   r:::::r
+        GGGGGG   GGGG    uuuuuuuu  uuuu        ttttttttttt        ttttttttttt      eeeeeeeeeeeeee   rrrrrrr
+
+*/
+		"editorGutter.background": "#282e33", // black
+		"editorGutter.modifiedBackground": "#0c7d9d",
+		"editorGutter.addedBackground": "#587c0c",
+		"editorGutter.deletedBackground": "#94151b",
+		"editorGutter.commentRangeForeground": "#eeaaff68",
+		"editorGutter.foldingControlForeground": "#ec7e9c", // Accent light (link)
+		/*
+
+                                  dddddddd                                                                                                                                     dddddddd
+EEEEEEEEEEEEEEEEEEEEEE            d::::::d  iiii          tttt                                                                                               iiii              d::::::d                                                 tttt                                                    lllllll
+E::::::::::::::::::::E            d::::::d i::::i      ttt:::t                                                                                              i::::i             d::::::d                                              ttt:::t                                                    l:::::l
+E::::::::::::::::::::E            d::::::d  iiii       t:::::t                                                                                               iiii              d::::::d                                              t:::::t                                                    l:::::l
+EE::::::EEEEEEEEE::::E            d:::::d              t:::::t                                                                                                                 d:::::d                                               t:::::t                                                    l:::::l
+  E:::::E       EEEEEE    ddddddddd:::::d iiiiiiittttttt:::::ttttttt       ooooooooooo   rrrrr   rrrrrrrrr        wwwwwww           wwwww           wwwwwwwiiiiiii     ddddddddd:::::d    ggggggggg   ggggg    eeeeeeeeeeee    ttttttt:::::ttttttt             cccccccccccccccc   ooooooooooo    l::::l    ooooooooooo   rrrrr   rrrrrrrrr       ssssssssss
+  E:::::E               dd::::::::::::::d i:::::it:::::::::::::::::t     oo:::::::::::oo r::::rrr:::::::::r        w:::::w         w:::::w         w:::::w i:::::i   dd::::::::::::::d   g:::::::::ggg::::g  ee::::::::::::ee  t:::::::::::::::::t           cc:::::::::::::::c oo:::::::::::oo  l::::l  oo:::::::::::oo r::::rrr:::::::::r    ss::::::::::s
+  E::::::EEEEEEEEEE    d::::::::::::::::d  i::::it:::::::::::::::::t    o:::::::::::::::or:::::::::::::::::r        w:::::w       w:::::::w       w:::::w   i::::i  d::::::::::::::::d  g:::::::::::::::::g e::::::eeeee:::::eet:::::::::::::::::t          c:::::::::::::::::co:::::::::::::::o l::::l o:::::::::::::::or:::::::::::::::::r ss:::::::::::::s
+  E:::::::::::::::E   d:::::::ddddd:::::d  i::::itttttt:::::::tttttt    o:::::ooooo:::::orr::::::rrrrr::::::r        w:::::w     w:::::::::w     w:::::w    i::::i d:::::::ddddd:::::d g::::::ggggg::::::gge::::::e     e:::::etttttt:::::::tttttt         c:::::::cccccc:::::co:::::ooooo:::::o l::::l o:::::ooooo:::::orr::::::rrrrr::::::rs::::::ssss:::::s
+  E:::::::::::::::E   d::::::d    d:::::d  i::::i      t:::::t          o::::o     o::::o r:::::r     r:::::r         w:::::w   w:::::w:::::w   w:::::w     i::::i d::::::d    d:::::d g:::::g     g:::::g e:::::::eeeee::::::e      t:::::t               c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r     r:::::r s:::::s  ssssss
+  E::::::EEEEEEEEEE   d:::::d     d:::::d  i::::i      t:::::t          o::::o     o::::o r:::::r     rrrrrrr          w:::::w w:::::w w:::::w w:::::w      i::::i d:::::d     d:::::d g:::::g     g:::::g e:::::::::::::::::e       t:::::t               c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r     rrrrrrr   s::::::s
+  E:::::E             d:::::d     d:::::d  i::::i      t:::::t          o::::o     o::::o r:::::r                       w:::::w:::::w   w:::::w:::::w       i::::i d:::::d     d:::::d g:::::g     g:::::g e::::::eeeeeeeeeee        t:::::t               c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r                  s::::::s
+  E:::::E       EEEEEEd:::::d     d:::::d  i::::i      t:::::t    tttttto::::o     o::::o r:::::r                        w:::::::::w     w:::::::::w        i::::i d:::::d     d:::::d g::::::g    g:::::g e:::::::e                 t:::::t    tttttt     c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r            ssssss   s:::::s
+EE::::::EEEEEEEE:::::Ed::::::ddddd::::::ddi::::::i     t::::::tttt:::::to:::::ooooo:::::o r:::::r                         w:::::::w       w:::::::w        i::::::id::::::ddddd::::::ddg:::::::ggggg:::::g e::::::::e                t::::::tttt:::::t     c:::::::cccccc:::::co:::::ooooo:::::ol::::::lo:::::ooooo:::::o r:::::r            s:::::ssss::::::s
+E::::::::::::::::::::E d:::::::::::::::::di::::::i     tt::::::::::::::to:::::::::::::::o r:::::r                          w:::::w         w:::::w         i::::::i d:::::::::::::::::d g::::::::::::::::g  e::::::::eeeeeeee        tt::::::::::::::t      c:::::::::::::::::co:::::::::::::::ol::::::lo:::::::::::::::o r:::::r            s::::::::::::::s
+E::::::::::::::::::::E  d:::::::::ddd::::di::::::i       tt:::::::::::tt oo:::::::::::oo  r:::::r                           w:::w           w:::w          i::::::i  d:::::::::ddd::::d  gg::::::::::::::g   ee:::::::::::::e          tt:::::::::::tt       cc:::::::::::::::c oo:::::::::::oo l::::::l oo:::::::::::oo  r:::::r             s:::::::::::ss
+EEEEEEEEEEEEEEEEEEEEEE   ddddddddd   dddddiiiiiiii         ttttttttttt     ooooooooooo    rrrrrrr                            www             www           iiiiiiii   ddddddddd   ddddd    gggggggg::::::g     eeeeeeeeeeeeee            ttttttttttt           cccccccccccccccc   ooooooooooo   llllllll   ooooooooooo    rrrrrrr              sssssssssss
+                                                                                                                                                                                                   g:::::g
+                                                                                                                                                                                       gggggg      g:::::g
+                                                                                                                                                                                       g:::::gg   gg:::::g
+                                                                                                                                                                                        g::::::ggg:::::::g
+                                                                                                                                                                                         gg:::::::::::::g
+                                                                                                                                                                                           ggg::::::ggg
+                                                                                                                                                                                              gggggg
+*/
+		"editorWidget.background": "#282e33", // black
+		"editorWidget.foreground": "#ffffff7d", // foreground
+		"editorWidget.border": "#ffffff4d", // White 35%
+		"editorWidget.resizeBorder": "#e55279", // accent
+		// "editorSuggestWidget.background": "#62da22",
+		// "editorSuggestWidget.border": "#454545",
+		// "editorSuggestWidget.foreground": "#d4d4d4",
+		// "editorSuggestWidget.focusHighlightForeground": "#ff0000",
+		// "editorSuggestWidget.highlightForeground": "#79ed36",
+		// "editorSuggestWidget.selectedBackground": "#e477ff36",
+		// "editorHoverWidget.foreground": "#cccccc",
+		// "editorHoverWidget.border": "#rgb",
+		// "editorHoverWidget.background": "#rgb",
+		// "editorGhostText.border": "#ff0000",
+		"debugExceptionWidget.background": "#282e33",
+		"debugExceptionWidget.border": "#cc6633",
+		"editorMarkerNavigation.background": "#282e33",
+		"editorMarkerNavigationError.background": "#ff3953",
+		"editorMarkerNavigationInfo.background": "#5fb4ff",
+		"editorMarkerNavigationWarning.background": "#ffd000",
+		/*
+
+
+PPPPPPPPPPPPPPPPP                                        kkkkkkkk                                           iiii                                                                                                       lllllll
+P::::::::::::::::P                                       k::::::k                                          i::::i                                                                                                      l:::::l
+P::::::PPPPPP:::::P                                      k::::::k                                           iiii                                                                                                       l:::::l
+PP:::::P     P:::::P                                     k::::::k                                                                                                                                                      l:::::l
+  P::::P     P:::::P  eeeeeeeeeeee        eeeeeeeeeeee    k:::::k    kkkkkkk     vvvvvvv           vvvvvvviiiiiii     eeeeeeeeeeee  wwwwwww           wwwww           wwwwwww         cccccccccccccccc   ooooooooooo    l::::l    ooooooooooo   rrrrr   rrrrrrrrr       ssssssssss
+  P::::P     P:::::Pee::::::::::::ee    ee::::::::::::ee  k:::::k   k:::::k       v:::::v         v:::::v i:::::i   ee::::::::::::ee w:::::w         w:::::w         w:::::w        cc:::::::::::::::c oo:::::::::::oo  l::::l  oo:::::::::::oo r::::rrr:::::::::r    ss::::::::::s
+  P::::PPPPPP:::::Pe::::::eeeee:::::ee e::::::eeeee:::::eek:::::k  k:::::k         v:::::v       v:::::v   i::::i  e::::::eeeee:::::eew:::::w       w:::::::w       w:::::w        c:::::::::::::::::co:::::::::::::::o l::::l o:::::::::::::::or:::::::::::::::::r ss:::::::::::::s
+  P:::::::::::::PPe::::::e     e:::::ee::::::e     e:::::ek:::::k k:::::k           v:::::v     v:::::v    i::::i e::::::e     e:::::e w:::::w     w:::::::::w     w:::::w        c:::::::cccccc:::::co:::::ooooo:::::o l::::l o:::::ooooo:::::orr::::::rrrrr::::::rs::::::ssss:::::s
+  P::::PPPPPPPPP  e:::::::eeeee::::::ee:::::::eeeee::::::ek::::::k:::::k             v:::::v   v:::::v     i::::i e:::::::eeeee::::::e  w:::::w   w:::::w:::::w   w:::::w         c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r     r:::::r s:::::s  ssssss
+  P::::P          e:::::::::::::::::e e:::::::::::::::::e k:::::::::::k               v:::::v v:::::v      i::::i e:::::::::::::::::e    w:::::w w:::::w w:::::w w:::::w          c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r     rrrrrrr   s::::::s
+  P::::P          e::::::eeeeeeeeeee  e::::::eeeeeeeeeee  k:::::::::::k                v:::::v:::::v       i::::i e::::::eeeeeeeeeee      w:::::w:::::w   w:::::w:::::w           c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r                  s::::::s
+  P::::P          e:::::::e           e:::::::e           k::::::k:::::k                v:::::::::v        i::::i e:::::::e                w:::::::::w     w:::::::::w            c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r            ssssss   s:::::s
+PP::::::PP        e::::::::e          e::::::::e         k::::::k k:::::k                v:::::::v        i::::::ie::::::::e                w:::::::w       w:::::::w             c:::::::cccccc:::::co:::::ooooo:::::ol::::::lo:::::ooooo:::::o r:::::r            s:::::ssss::::::s
+P::::::::P         e::::::::eeeeeeee   e::::::::eeeeeeee k::::::k  k:::::k                v:::::v         i::::::i e::::::::eeeeeeee         w:::::w         w:::::w               c:::::::::::::::::co:::::::::::::::ol::::::lo:::::::::::::::o r:::::r            s::::::::::::::s
+P::::::::P          ee:::::::::::::e    ee:::::::::::::e k::::::k   k:::::k                v:::v          i::::::i  ee:::::::::::::e          w:::w           w:::w                 cc:::::::::::::::c oo:::::::::::oo l::::::l oo:::::::::::oo  r:::::r             s:::::::::::ss
+PPPPPPPPPP            eeeeeeeeeeeeee      eeeeeeeeeeeeee kkkkkkkk    kkkkkkk                vvv           iiiiiiii    eeeeeeeeeeeeee           www             www                    cccccccccccccccc   ooooooooooo   llllllll   ooooooooooo    rrrrrrr              sssssssssss
+
+*/
+		"peekView.border": "#e55279", // accent
+		"peekViewEditor.background": "#282e33", // black
+		"peekViewEditorGutter.background": "#262b31", // Background menu, widget
+		"peekViewEditor.matchHighlightBackground": "#ffffff00",
+		"peekViewEditor.matchHighlightBorder": "#3ff90c",
+		"peekViewResult.background": "#262b31", // Background menu, widget
+		"peekViewResult.fileForeground": "#e7e7e7", // foreground
+		// "peekViewResult.lineForeground": "#3ff90c",
+		"peekViewResult.matchHighlightBackground": "#3ff90c2e",
+		"peekViewResult.selectionBackground": "#be416280", // Background button, selection, menu border
+		// "peekViewResult.selectionForeground": "#fff",
+		"peekViewTitle.background": "#262b31", // Background menu, widget
+		// "peekViewTitleDescription.foreground": "#de1212",
+		"peekViewTitleLabel.foreground": "#f2abbe", // Accent even lighter (link)
+		/*
+
+
+MMMMMMMM               MMMMMMMM                                                                                                                                               ffffffffffffffff  lllllll   iiii                               tttt                                                                     lllllll
+M:::::::M             M:::::::M                                                                                                                                              f::::::::::::::::f l:::::l  i::::i                           ttt:::t                                                                     l:::::l
+M::::::::M           M::::::::M                                                                                                                                             f::::::::::::::::::fl:::::l   iiii                            t:::::t                                                                     l:::::l
+M:::::::::M         M:::::::::M                                                                                                                                             f::::::fffffff:::::fl:::::l                                   t:::::t                                                                     l:::::l
+M::::::::::M       M::::::::::M    eeeeeeeeeeee    rrrrr   rrrrrrrrr      ggggggggg   ggggg    eeeeeeeeeeee             cccccccccccccccc   ooooooooooo   nnnn  nnnnnnnn     f:::::f       ffffff l::::l iiiiiii     ccccccccccccccccttttttt:::::ttttttt        ssssssssss            cccccccccccccccc   ooooooooooo    l::::l    ooooooooooo   rrrrr   rrrrrrrrr       ssssssssss
+M:::::::::::M     M:::::::::::M  ee::::::::::::ee  r::::rrr:::::::::r    g:::::::::ggg::::g  ee::::::::::::ee         cc:::::::::::::::c oo:::::::::::oo n:::nn::::::::nn   f:::::f              l::::l i:::::i   cc:::::::::::::::ct:::::::::::::::::t      ss::::::::::s         cc:::::::::::::::c oo:::::::::::oo  l::::l  oo:::::::::::oo r::::rrr:::::::::r    ss::::::::::s
+M:::::::M::::M   M::::M:::::::M e::::::eeeee:::::eer:::::::::::::::::r  g:::::::::::::::::g e::::::eeeee:::::ee      c:::::::::::::::::co:::::::::::::::on::::::::::::::nn f:::::::ffffff        l::::l  i::::i  c:::::::::::::::::ct:::::::::::::::::t    ss:::::::::::::s       c:::::::::::::::::co:::::::::::::::o l::::l o:::::::::::::::or:::::::::::::::::r ss:::::::::::::s
+M::::::M M::::M M::::M M::::::Me::::::e     e:::::err::::::rrrrr::::::rg::::::ggggg::::::gge::::::e     e:::::e     c:::::::cccccc:::::co:::::ooooo:::::onn:::::::::::::::nf::::::::::::f        l::::l  i::::i c:::::::cccccc:::::ctttttt:::::::tttttt    s::::::ssss:::::s     c:::::::cccccc:::::co:::::ooooo:::::o l::::l o:::::ooooo:::::orr::::::rrrrr::::::rs::::::ssss:::::s
+M::::::M  M::::M::::M  M::::::Me:::::::eeeee::::::e r:::::r     r:::::rg:::::g     g:::::g e:::::::eeeee::::::e     c::::::c     ccccccco::::o     o::::o  n:::::nnnn:::::nf::::::::::::f        l::::l  i::::i c::::::c     ccccccc      t:::::t           s:::::s  ssssss      c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r     r:::::r s:::::s  ssssss
+M::::::M   M:::::::M   M::::::Me:::::::::::::::::e  r:::::r     rrrrrrrg:::::g     g:::::g e:::::::::::::::::e      c:::::c             o::::o     o::::o  n::::n    n::::nf:::::::ffffff        l::::l  i::::i c:::::c                   t:::::t             s::::::s           c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r     rrrrrrr   s::::::s
+M::::::M    M:::::M    M::::::Me::::::eeeeeeeeeee   r:::::r            g:::::g     g:::::g e::::::eeeeeeeeeee       c:::::c             o::::o     o::::o  n::::n    n::::n f:::::f              l::::l  i::::i c:::::c                   t:::::t                s::::::s        c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r                  s::::::s
+M::::::M     MMMMM     M::::::Me:::::::e            r:::::r            g::::::g    g:::::g e:::::::e                c::::::c     ccccccco::::o     o::::o  n::::n    n::::n f:::::f              l::::l  i::::i c::::::c     ccccccc      t:::::t    ttttttssssss   s:::::s      c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r            ssssss   s:::::s
+M::::::M               M::::::Me::::::::e           r:::::r            g:::::::ggggg:::::g e::::::::e               c:::::::cccccc:::::co:::::ooooo:::::o  n::::n    n::::nf:::::::f            l::::::li::::::ic:::::::cccccc:::::c      t::::::tttt:::::ts:::::ssss::::::s     c:::::::cccccc:::::co:::::ooooo:::::ol::::::lo:::::ooooo:::::o r:::::r            s:::::ssss::::::s
+M::::::M               M::::::M e::::::::eeeeeeee   r:::::r             g::::::::::::::::g  e::::::::eeeeeeee        c:::::::::::::::::co:::::::::::::::o  n::::n    n::::nf:::::::f            l::::::li::::::i c:::::::::::::::::c      tt::::::::::::::ts::::::::::::::s       c:::::::::::::::::co:::::::::::::::ol::::::lo:::::::::::::::o r:::::r            s::::::::::::::s
+M::::::M               M::::::M  ee:::::::::::::e   r:::::r              gg::::::::::::::g   ee:::::::::::::e         cc:::::::::::::::c oo:::::::::::oo   n::::n    n::::nf:::::::f            l::::::li::::::i  cc:::::::::::::::c        tt:::::::::::tt s:::::::::::ss         cc:::::::::::::::c oo:::::::::::oo l::::::l oo:::::::::::oo  r:::::r             s:::::::::::ss
+MMMMMMMM               MMMMMMMM    eeeeeeeeeeeeee   rrrrrrr                gggggggg::::::g     eeeeeeeeeeeeee           cccccccccccccccc   ooooooooooo     nnnnnn    nnnnnnfffffffff            lllllllliiiiiiii    cccccccccccccccc          ttttttttttt    sssssssssss             cccccccccccccccc   ooooooooooo   llllllll   ooooooooooo    rrrrrrr              sssssssssss
+                                                                                   g:::::g
+                                                                       gggggg      g:::::g
+                                                                       g:::::gg   gg:::::g
+                                                                        g::::::ggg:::::::g
+                                                                         gg:::::::::::::g
+                                                                           ggg::::::ggg
+                                                                              gggggg
+*/
+		"merge.commonContentBackground": "#282828",
+		"merge.commonHeaderBackground": "#383838",
+		"merge.currentContentBackground": "#27403B",
+		"merge.currentHeaderBackground": "#367366",
+		"merge.incomingContentBackground": "#28384B",
+		"merge.incomingHeaderBackground": "#395F8F",
+		/*
+
+
+PPPPPPPPPPPPPPPPP                                                       lllllll                                           lllllll
+P::::::::::::::::P                                                      l:::::l                                           l:::::l
+P::::::PPPPPP:::::P                                                     l:::::l                                           l:::::l
+PP:::::P     P:::::P                                                    l:::::l                                           l:::::l
+  P::::P     P:::::Paaaaaaaaaaaaa  nnnn  nnnnnnnn        eeeeeeeeeeee    l::::l          cccccccccccccccc   ooooooooooo    l::::l    ooooooooooo   rrrrr   rrrrrrrrr       ssssssssss
+  P::::P     P:::::Pa::::::::::::a n:::nn::::::::nn    ee::::::::::::ee  l::::l        cc:::::::::::::::c oo:::::::::::oo  l::::l  oo:::::::::::oo r::::rrr:::::::::r    ss::::::::::s
+  P::::PPPPPP:::::P aaaaaaaaa:::::an::::::::::::::nn  e::::::eeeee:::::eel::::l       c:::::::::::::::::co:::::::::::::::o l::::l o:::::::::::::::or:::::::::::::::::r ss:::::::::::::s
+  P:::::::::::::PP           a::::ann:::::::::::::::ne::::::e     e:::::el::::l      c:::::::cccccc:::::co:::::ooooo:::::o l::::l o:::::ooooo:::::orr::::::rrrrr::::::rs::::::ssss:::::s
+  P::::PPPPPPPPP      aaaaaaa:::::a  n:::::nnnn:::::ne:::::::eeeee::::::el::::l      c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r     r:::::r s:::::s  ssssss
+  P::::P            aa::::::::::::a  n::::n    n::::ne:::::::::::::::::e l::::l      c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r     rrrrrrr   s::::::s
+  P::::P           a::::aaaa::::::a  n::::n    n::::ne::::::eeeeeeeeeee  l::::l      c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r                  s::::::s
+  P::::P          a::::a    a:::::a  n::::n    n::::ne:::::::e           l::::l      c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r            ssssss   s:::::s
+PP::::::PP        a::::a    a:::::a  n::::n    n::::ne::::::::e         l::::::l     c:::::::cccccc:::::co:::::ooooo:::::ol::::::lo:::::ooooo:::::o r:::::r            s:::::ssss::::::s
+P::::::::P        a:::::aaaa::::::a  n::::n    n::::n e::::::::eeeeeeee l::::::l      c:::::::::::::::::co:::::::::::::::ol::::::lo:::::::::::::::o r:::::r            s::::::::::::::s
+P::::::::P         a::::::::::aa:::a n::::n    n::::n  ee:::::::::::::e l::::::l       cc:::::::::::::::c oo:::::::::::oo l::::::l oo:::::::::::oo  r:::::r             s:::::::::::ss
+PPPPPPPPPP          aaaaaaaaaa  aaaa nnnnnn    nnnnnn    eeeeeeeeeeeeee llllllll         cccccccccccccccc   ooooooooooo   llllllll   ooooooooooo    rrrrrrr              sssssssssss
+
+*/
+		"panel.background": "#282e33", // black
+		"panel.border": "#ffffff38", // White 25%
+		"panel.dropBorder": "#ff4794", // Highlight flashy
+		"panelTitle.activeBorder": "#ec7e9c", // Accent light (link)
+		"panelTitle.activeForeground": "#ec7e9c", // Accent light (link)
+		"panelTitle.inactiveForeground": "#e7e7e7", // foreground
+		// "panelInput.border": "#ff0000",
+		// "panelSection.border": "#ee0f0ff5",
+		/*
+
+
+   SSSSSSSSSSSSSSS      tttt                                    tttt                                                  BBBBBBBBBBBBBBBBB                                                                                  lllllll
+ SS:::::::::::::::S  ttt:::t                                 ttt:::t                                                  B::::::::::::::::B                                                                                 l:::::l
+S:::::SSSSSS::::::S  t:::::t                                 t:::::t                                                  B::::::BBBBBB:::::B                                                                                l:::::l
+S:::::S     SSSSSSS  t:::::t                                 t:::::t                                                  BB:::::B     B:::::B                                                                               l:::::l
+S:::::S        ttttttt:::::ttttttt      aaaaaaaaaaaaa  ttttttt:::::ttttttt    uuuuuu    uuuuuu      ssssssssss          B::::B     B:::::B  aaaaaaaaaaaaa  rrrrr   rrrrrrrrr            cccccccccccccccc   ooooooooooo    l::::l    ooooooooooo   rrrrr   rrrrrrrrr       ssssssssss
+S:::::S        t:::::::::::::::::t      a::::::::::::a t:::::::::::::::::t    u::::u    u::::u    ss::::::::::s         B::::B     B:::::B  a::::::::::::a r::::rrr:::::::::r         cc:::::::::::::::c oo:::::::::::oo  l::::l  oo:::::::::::oo r::::rrr:::::::::r    ss::::::::::s
+ S::::SSSS     t:::::::::::::::::t      aaaaaaaaa:::::at:::::::::::::::::t    u::::u    u::::u  ss:::::::::::::s        B::::BBBBBB:::::B   aaaaaaaaa:::::ar:::::::::::::::::r       c:::::::::::::::::co:::::::::::::::o l::::l o:::::::::::::::or:::::::::::::::::r ss:::::::::::::s
+  SS::::::SSSSStttttt:::::::tttttt               a::::atttttt:::::::tttttt    u::::u    u::::u  s::::::ssss:::::s       B:::::::::::::BB             a::::arr::::::rrrrr::::::r     c:::::::cccccc:::::co:::::ooooo:::::o l::::l o:::::ooooo:::::orr::::::rrrrr::::::rs::::::ssss:::::s
+    SSS::::::::SS    t:::::t              aaaaaaa:::::a      t:::::t          u::::u    u::::u   s:::::s  ssssss        B::::BBBBBB:::::B     aaaaaaa:::::a r:::::r     r:::::r     c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r     r:::::r s:::::s  ssssss
+       SSSSSS::::S   t:::::t            aa::::::::::::a      t:::::t          u::::u    u::::u     s::::::s             B::::B     B:::::B  aa::::::::::::a r:::::r     rrrrrrr     c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r     rrrrrrr   s::::::s
+            S:::::S  t:::::t           a::::aaaa::::::a      t:::::t          u::::u    u::::u        s::::::s          B::::B     B:::::B a::::aaaa::::::a r:::::r                 c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r                  s::::::s
+            S:::::S  t:::::t    tttttta::::a    a:::::a      t:::::t    ttttttu:::::uuuu:::::u  ssssss   s:::::s        B::::B     B:::::Ba::::a    a:::::a r:::::r                 c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r            ssssss   s:::::s
+SSSSSSS     S:::::S  t::::::tttt:::::ta::::a    a:::::a      t::::::tttt:::::tu:::::::::::::::uus:::::ssss::::::s     BB:::::BBBBBB::::::Ba::::a    a:::::a r:::::r                 c:::::::cccccc:::::co:::::ooooo:::::ol::::::lo:::::ooooo:::::o r:::::r            s:::::ssss::::::s
+S::::::SSSSSS:::::S  tt::::::::::::::ta:::::aaaa::::::a      tt::::::::::::::t u:::::::::::::::us::::::::::::::s      B:::::::::::::::::B a:::::aaaa::::::a r:::::r                  c:::::::::::::::::co:::::::::::::::ol::::::lo:::::::::::::::o r:::::r            s::::::::::::::s
+S:::::::::::::::SS     tt:::::::::::tt a::::::::::aa:::a       tt:::::::::::tt  uu::::::::uu:::u s:::::::::::ss       B::::::::::::::::B   a::::::::::aa:::ar:::::r                   cc:::::::::::::::c oo:::::::::::oo l::::::l oo:::::::::::oo  r:::::r             s:::::::::::ss
+ SSSSSSSSSSSSSSS         ttttttttttt    aaaaaaaaaa  aaaa         ttttttttttt      uuuuuuuu  uuuu  sssssssssss         BBBBBBBBBBBBBBBBB     aaaaaaaaaa  aaaarrrrrrr                     cccccccccccccccc   ooooooooooo   llllllll   ooooooooooo    rrrrrrr              sssssssssss
+
+*/
+		"statusBar.background": "#282e33", // black
+		"statusBar.foreground": "#e7e7e7", // foreground
+		"statusBar.border": "#ffffff38", // White 25%
+		"statusBar.debuggingBackground": "#cc6633",
+		"statusBar.debuggingBorder": "#282e33",
+		"statusBar.debuggingForeground": "#fff",
+		"statusBar.noFolderBackground": "#e5527940", // Accent 25%
+		"statusBar.noFolderBorder": "#ffffff38", // White 25%
+		"statusBar.noFolderForeground": "#e7e7e7", // foreground
+		// "statusBarItem.activeBackground": "#e90d0de7",
+		"statusBarItem.hoverBackground": "#e55279", // accent
+		"statusBarItem.prominentBackground": "#e5527980", // Accent 50%
+		"statusBarItem.remoteBackground": "#e55279", // accent
+		"statusBarItem.remoteForeground": "#fff", // white
+		/*
+
+
+TTTTTTTTTTTTTTTTTTTTTTT  iiii          tttt          lllllll                          BBBBBBBBBBBBBBBBB                                                                                  lllllll
+T:::::::::::::::::::::T i::::i      ttt:::t          l:::::l                          B::::::::::::::::B                                                                                 l:::::l
+T:::::::::::::::::::::T  iiii       t:::::t          l:::::l                          B::::::BBBBBB:::::B                                                                                l:::::l
+T:::::TT:::::::TT:::::T             t:::::t          l:::::l                          BB:::::B     B:::::B                                                                               l:::::l
+TTTTTT  T:::::T  TTTTTTiiiiiiittttttt:::::ttttttt     l::::l     eeeeeeeeeeee           B::::B     B:::::B  aaaaaaaaaaaaa  rrrrr   rrrrrrrrr            cccccccccccccccc   ooooooooooo    l::::l    ooooooooooo   rrrrr   rrrrrrrrr       ssssssssss
+        T:::::T        i:::::it:::::::::::::::::t     l::::l   ee::::::::::::ee         B::::B     B:::::B  a::::::::::::a r::::rrr:::::::::r         cc:::::::::::::::c oo:::::::::::oo  l::::l  oo:::::::::::oo r::::rrr:::::::::r    ss::::::::::s
+        T:::::T         i::::it:::::::::::::::::t     l::::l  e::::::eeeee:::::ee       B::::BBBBBB:::::B   aaaaaaaaa:::::ar:::::::::::::::::r       c:::::::::::::::::co:::::::::::::::o l::::l o:::::::::::::::or:::::::::::::::::r ss:::::::::::::s
+        T:::::T         i::::itttttt:::::::tttttt     l::::l e::::::e     e:::::e       B:::::::::::::BB             a::::arr::::::rrrrr::::::r     c:::::::cccccc:::::co:::::ooooo:::::o l::::l o:::::ooooo:::::orr::::::rrrrr::::::rs::::::ssss:::::s
+        T:::::T         i::::i      t:::::t           l::::l e:::::::eeeee::::::e       B::::BBBBBB:::::B     aaaaaaa:::::a r:::::r     r:::::r     c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r     r:::::r s:::::s  ssssss
+        T:::::T         i::::i      t:::::t           l::::l e:::::::::::::::::e        B::::B     B:::::B  aa::::::::::::a r:::::r     rrrrrrr     c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r     rrrrrrr   s::::::s
+        T:::::T         i::::i      t:::::t           l::::l e::::::eeeeeeeeeee         B::::B     B:::::B a::::aaaa::::::a r:::::r                 c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r                  s::::::s
+        T:::::T         i::::i      t:::::t    tttttt l::::l e:::::::e                  B::::B     B:::::Ba::::a    a:::::a r:::::r                 c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r            ssssss   s:::::s
+      TT:::::::TT      i::::::i     t::::::tttt:::::tl::::::le::::::::e               BB:::::BBBBBB::::::Ba::::a    a:::::a r:::::r                 c:::::::cccccc:::::co:::::ooooo:::::ol::::::lo:::::ooooo:::::o r:::::r            s:::::ssss::::::s
+      T:::::::::T      i::::::i     tt::::::::::::::tl::::::l e::::::::eeeeeeee       B:::::::::::::::::B a:::::aaaa::::::a r:::::r                  c:::::::::::::::::co:::::::::::::::ol::::::lo:::::::::::::::o r:::::r            s::::::::::::::s
+      T:::::::::T      i::::::i       tt:::::::::::ttl::::::l  ee:::::::::::::e       B::::::::::::::::B   a::::::::::aa:::ar:::::r                   cc:::::::::::::::c oo:::::::::::oo l::::::l oo:::::::::::oo  r:::::r             s:::::::::::ss
+      TTTTTTTTTTT      iiiiiiii         ttttttttttt  llllllll    eeeeeeeeeeeeee       BBBBBBBBBBBBBBBBB     aaaaaaaaaa  aaaarrrrrrr                     cccccccccccccccc   ooooooooooo   llllllll   ooooooooooo    rrrrrrr              sssssssssss
+
+*/
+		"titleBar.activeBackground": "#282e33", // black
+		"titleBar.activeForeground": "#e7e7e7", // foreground
+		"titleBar.border": "#282e33", // black
+		"titleBar.inactiveBackground": "#262b31",
+		"titleBar.inactiveForeground": "#cccccc99",
+		/*
+
+
+MMMMMMMM               MMMMMMMM                                                             BBBBBBBBBBBBBBBBB                                                                                  lllllll
+M:::::::M             M:::::::M                                                             B::::::::::::::::B                                                                                 l:::::l
+M::::::::M           M::::::::M                                                             B::::::BBBBBB:::::B                                                                                l:::::l
+M:::::::::M         M:::::::::M                                                             BB:::::B     B:::::B                                                                               l:::::l
+M::::::::::M       M::::::::::M    eeeeeeeeeeee    nnnn  nnnnnnnn    uuuuuu    uuuuuu         B::::B     B:::::B  aaaaaaaaaaaaa  rrrrr   rrrrrrrrr            cccccccccccccccc   ooooooooooo    l::::l    ooooooooooo   rrrrr   rrrrrrrrr       ssssssssss
+M:::::::::::M     M:::::::::::M  ee::::::::::::ee  n:::nn::::::::nn  u::::u    u::::u         B::::B     B:::::B  a::::::::::::a r::::rrr:::::::::r         cc:::::::::::::::c oo:::::::::::oo  l::::l  oo:::::::::::oo r::::rrr:::::::::r    ss::::::::::s
+M:::::::M::::M   M::::M:::::::M e::::::eeeee:::::een::::::::::::::nn u::::u    u::::u         B::::BBBBBB:::::B   aaaaaaaaa:::::ar:::::::::::::::::r       c:::::::::::::::::co:::::::::::::::o l::::l o:::::::::::::::or:::::::::::::::::r ss:::::::::::::s
+M::::::M M::::M M::::M M::::::Me::::::e     e:::::enn:::::::::::::::nu::::u    u::::u         B:::::::::::::BB             a::::arr::::::rrrrr::::::r     c:::::::cccccc:::::co:::::ooooo:::::o l::::l o:::::ooooo:::::orr::::::rrrrr::::::rs::::::ssss:::::s
+M::::::M  M::::M::::M  M::::::Me:::::::eeeee::::::e  n:::::nnnn:::::nu::::u    u::::u         B::::BBBBBB:::::B     aaaaaaa:::::a r:::::r     r:::::r     c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r     r:::::r s:::::s  ssssss
+M::::::M   M:::::::M   M::::::Me:::::::::::::::::e   n::::n    n::::nu::::u    u::::u         B::::B     B:::::B  aa::::::::::::a r:::::r     rrrrrrr     c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r     rrrrrrr   s::::::s
+M::::::M    M:::::M    M::::::Me::::::eeeeeeeeeee    n::::n    n::::nu::::u    u::::u         B::::B     B:::::B a::::aaaa::::::a r:::::r                 c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r                  s::::::s
+M::::::M     MMMMM     M::::::Me:::::::e             n::::n    n::::nu:::::uuuu:::::u         B::::B     B:::::Ba::::a    a:::::a r:::::r                 c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r            ssssss   s:::::s
+M::::::M               M::::::Me::::::::e            n::::n    n::::nu:::::::::::::::uu     BB:::::BBBBBB::::::Ba::::a    a:::::a r:::::r                 c:::::::cccccc:::::co:::::ooooo:::::ol::::::lo:::::ooooo:::::o r:::::r            s:::::ssss::::::s
+M::::::M               M::::::M e::::::::eeeeeeee    n::::n    n::::n u:::::::::::::::u     B:::::::::::::::::B a:::::aaaa::::::a r:::::r                  c:::::::::::::::::co:::::::::::::::ol::::::lo:::::::::::::::o r:::::r            s::::::::::::::s
+M::::::M               M::::::M  ee:::::::::::::e    n::::n    n::::n  uu::::::::uu:::u     B::::::::::::::::B   a::::::::::aa:::ar:::::r                   cc:::::::::::::::c oo:::::::::::oo l::::::l oo:::::::::::oo  r:::::r             s:::::::::::ss
+MMMMMMMM               MMMMMMMM    eeeeeeeeeeeeee    nnnnnn    nnnnnn    uuuuuuuu  uuuu     BBBBBBBBBBBBBBBBB     aaaaaaaaaa  aaaarrrrrrr                     cccccccccccccccc   ooooooooooo   llllllll   ooooooooooo    rrrrrrr              sssssssssss
+
+*/
+		"menubar.selectionForeground": "#e7e7e7", // foreground
+		"menubar.selectionBackground": "#e55279", // accent
+		"menubar.selectionBorder": "#ffffff00", // transparent
+		"menu.foreground": "#e7e7e7", // foreground
+		"menu.background": "#262b31", // Background menu, widget
+		"menu.border": "#be416280", // Background button, selection, menu border
+		"menu.selectionForeground": "#fff", // white
+		"menu.selectionBackground": "#be416280", // Background button, selection, menu border
+		"menu.selectionBorder": "#3a3a40", // Background input
+		"menu.separatorBackground": "#ffffff14", // White 10%
+		/*
+
+                                                                                                                                     dddddddd
+        CCCCCCCCCCCCC                                                                                                                d::::::d                                                                        tttt
+     CCC::::::::::::C                                                                                                                d::::::d                                                                     ttt:::t
+   CC:::::::::::::::C                                                                                                                d::::::d                                                                     t:::::t
+  C:::::CCCCCCCC::::C                                                                                                                d:::::d                                                                      t:::::t
+ C:::::C       CCCCCC   ooooooooooo      mmmmmmm    mmmmmmm      mmmmmmm    mmmmmmm     aaaaaaaaaaaaa  nnnn  nnnnnnnn        ddddddddd:::::d          cccccccccccccccc    eeeeeeeeeeee    nnnn  nnnnnnnn    ttttttt:::::ttttttt        eeeeeeeeeeee    rrrrr   rrrrrrrrr
+C:::::C               oo:::::::::::oo  mm:::::::m  m:::::::mm  mm:::::::m  m:::::::mm   a::::::::::::a n:::nn::::::::nn    dd::::::::::::::d        cc:::::::::::::::c  ee::::::::::::ee  n:::nn::::::::nn  t:::::::::::::::::t      ee::::::::::::ee  r::::rrr:::::::::r
+C:::::C              o:::::::::::::::om::::::::::mm::::::::::mm::::::::::mm::::::::::m  aaaaaaaaa:::::an::::::::::::::nn  d::::::::::::::::d       c:::::::::::::::::c e::::::eeeee:::::een::::::::::::::nn t:::::::::::::::::t     e::::::eeeee:::::eer:::::::::::::::::r
+C:::::C              o:::::ooooo:::::om::::::::::::::::::::::mm::::::::::::::::::::::m           a::::ann:::::::::::::::nd:::::::ddddd:::::d      c:::::::cccccc:::::ce::::::e     e:::::enn:::::::::::::::ntttttt:::::::tttttt    e::::::e     e:::::err::::::rrrrr::::::r
+C:::::C              o::::o     o::::om:::::mmm::::::mmm:::::mm:::::mmm::::::mmm:::::m    aaaaaaa:::::a  n:::::nnnn:::::nd::::::d    d:::::d      c::::::c     ccccccce:::::::eeeee::::::e  n:::::nnnn:::::n      t:::::t          e:::::::eeeee::::::e r:::::r     r:::::r
+C:::::C              o::::o     o::::om::::m   m::::m   m::::mm::::m   m::::m   m::::m  aa::::::::::::a  n::::n    n::::nd:::::d     d:::::d      c:::::c             e:::::::::::::::::e   n::::n    n::::n      t:::::t          e:::::::::::::::::e  r:::::r     rrrrrrr
+C:::::C              o::::o     o::::om::::m   m::::m   m::::mm::::m   m::::m   m::::m a::::aaaa::::::a  n::::n    n::::nd:::::d     d:::::d      c:::::c             e::::::eeeeeeeeeee    n::::n    n::::n      t:::::t          e::::::eeeeeeeeeee   r:::::r
+ C:::::C       CCCCCCo::::o     o::::om::::m   m::::m   m::::mm::::m   m::::m   m::::ma::::a    a:::::a  n::::n    n::::nd:::::d     d:::::d      c::::::c     ccccccce:::::::e             n::::n    n::::n      t:::::t    tttttte:::::::e            r:::::r
+  C:::::CCCCCCCC::::Co:::::ooooo:::::om::::m   m::::m   m::::mm::::m   m::::m   m::::ma::::a    a:::::a  n::::n    n::::nd::::::ddddd::::::dd     c:::::::cccccc:::::ce::::::::e            n::::n    n::::n      t::::::tttt:::::te::::::::e           r:::::r
+   CC:::::::::::::::Co:::::::::::::::om::::m   m::::m   m::::mm::::m   m::::m   m::::ma:::::aaaa::::::a  n::::n    n::::n d:::::::::::::::::d      c:::::::::::::::::c e::::::::eeeeeeee    n::::n    n::::n      tt::::::::::::::t e::::::::eeeeeeee   r:::::r
+     CCC::::::::::::C oo:::::::::::oo m::::m   m::::m   m::::mm::::m   m::::m   m::::m a::::::::::aa:::a n::::n    n::::n  d:::::::::ddd::::d       cc:::::::::::::::c  ee:::::::::::::e    n::::n    n::::n        tt:::::::::::tt  ee:::::::::::::e   r:::::r
+        CCCCCCCCCCCCC   ooooooooooo   mmmmmm   mmmmmm   mmmmmmmmmmmm   mmmmmm   mmmmmm  aaaaaaaaaa  aaaa nnnnnn    nnnnnn   ddddddddd   ddddd         cccccccccccccccc    eeeeeeeeeeeeee    nnnnnn    nnnnnn          ttttttttttt      eeeeeeeeeeeeee   rrrrrrr
+
+*/
+		"commandCenter.foreground": "#ffffff7d", // White 50%
+		"commandCenter.border": "#e5527980", // Accent 50%
+		"commandCenter.activeBackground": "#e55279", // accent
+		"commandCenter.activeForeground": "#e7e7e7", // foreground
+		/*
+
+
+NNNNNNNN        NNNNNNNN                          tttt            iiii     ffffffffffffffff    iiii                                                tttt            iiii                                                                               lllllll
+N:::::::N       N::::::N                       ttt:::t           i::::i   f::::::::::::::::f  i::::i                                            ttt:::t           i::::i                                                                              l:::::l
+N::::::::N      N::::::N                       t:::::t            iiii   f::::::::::::::::::f  iiii                                             t:::::t            iiii                                                                               l:::::l
+N:::::::::N     N::::::N                       t:::::t                   f::::::fffffff:::::f                                                   t:::::t                                                                                               l:::::l
+N::::::::::N    N::::::N   ooooooooooo   ttttttt:::::ttttttt    iiiiiii  f:::::f       ffffffiiiiiii     cccccccccccccccc  aaaaaaaaaaaaa  ttttttt:::::ttttttt    iiiiiii    ooooooooooo   nnnn  nnnnnnnn             cccccccccccccccc   ooooooooooo    l::::l    ooooooooooo   rrrrr   rrrrrrrrr       ssssssssss
+N:::::::::::N   N::::::N oo:::::::::::oo t:::::::::::::::::t    i:::::i  f:::::f             i:::::i   cc:::::::::::::::c  a::::::::::::a t:::::::::::::::::t    i:::::i  oo:::::::::::oo n:::nn::::::::nn         cc:::::::::::::::c oo:::::::::::oo  l::::l  oo:::::::::::oo r::::rrr:::::::::r    ss::::::::::s
+N:::::::N::::N  N::::::No:::::::::::::::ot:::::::::::::::::t     i::::i f:::::::ffffff        i::::i  c:::::::::::::::::c  aaaaaaaaa:::::at:::::::::::::::::t     i::::i o:::::::::::::::on::::::::::::::nn       c:::::::::::::::::co:::::::::::::::o l::::l o:::::::::::::::or:::::::::::::::::r ss:::::::::::::s
+N::::::N N::::N N::::::No:::::ooooo:::::otttttt:::::::tttttt     i::::i f::::::::::::f        i::::i c:::::::cccccc:::::c           a::::atttttt:::::::tttttt     i::::i o:::::ooooo:::::onn:::::::::::::::n     c:::::::cccccc:::::co:::::ooooo:::::o l::::l o:::::ooooo:::::orr::::::rrrrr::::::rs::::::ssss:::::s
+N::::::N  N::::N:::::::No::::o     o::::o      t:::::t           i::::i f::::::::::::f        i::::i c::::::c     ccccccc    aaaaaaa:::::a      t:::::t           i::::i o::::o     o::::o  n:::::nnnn:::::n     c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r     r:::::r s:::::s  ssssss
+N::::::N   N:::::::::::No::::o     o::::o      t:::::t           i::::i f:::::::ffffff        i::::i c:::::c               aa::::::::::::a      t:::::t           i::::i o::::o     o::::o  n::::n    n::::n     c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r     rrrrrrr   s::::::s
+N::::::N    N::::::::::No::::o     o::::o      t:::::t           i::::i  f:::::f              i::::i c:::::c              a::::aaaa::::::a      t:::::t           i::::i o::::o     o::::o  n::::n    n::::n     c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r                  s::::::s
+N::::::N     N:::::::::No::::o     o::::o      t:::::t    tttttt i::::i  f:::::f              i::::i c::::::c     ccccccca::::a    a:::::a      t:::::t    tttttt i::::i o::::o     o::::o  n::::n    n::::n     c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r            ssssss   s:::::s
+N::::::N      N::::::::No:::::ooooo:::::o      t::::::tttt:::::ti::::::if:::::::f            i::::::ic:::::::cccccc:::::ca::::a    a:::::a      t::::::tttt:::::ti::::::io:::::ooooo:::::o  n::::n    n::::n     c:::::::cccccc:::::co:::::ooooo:::::ol::::::lo:::::ooooo:::::o r:::::r            s:::::ssss::::::s
+N::::::N       N:::::::No:::::::::::::::o      tt::::::::::::::ti::::::if:::::::f            i::::::i c:::::::::::::::::ca:::::aaaa::::::a      tt::::::::::::::ti::::::io:::::::::::::::o  n::::n    n::::n      c:::::::::::::::::co:::::::::::::::ol::::::lo:::::::::::::::o r:::::r            s::::::::::::::s
+N::::::N        N::::::N oo:::::::::::oo         tt:::::::::::tti::::::if:::::::f            i::::::i  cc:::::::::::::::c a::::::::::aa:::a       tt:::::::::::tti::::::i oo:::::::::::oo   n::::n    n::::n       cc:::::::::::::::c oo:::::::::::oo l::::::l oo:::::::::::oo  r:::::r             s:::::::::::ss
+NNNNNNNN         NNNNNNN   ooooooooooo             ttttttttttt  iiiiiiiifffffffff            iiiiiiii    cccccccccccccccc  aaaaaaaaaa  aaaa         ttttttttttt  iiiiiiii   ooooooooooo     nnnnnn    nnnnnn         cccccccccccccccc   ooooooooooo   llllllll   ooooooooooo    rrrrrrr              sssssssssss
+
+*/
+		"notificationCenter.border": "#474747",
+		"notificationCenterHeader.background": "#303031",
+		"notificationCenterHeader.foreground": "#e7e7e7",
+		"notifications.background": "#16181b",
+		"notifications.border": "#303031",
+		"notifications.foreground": "#e7e7e7",
+		"notificationsErrorIcon.foreground": "#f48771",
+		"notificationsInfoIcon.foreground": "#75beff",
+		"notificationsWarningIcon.foreground": "#cca700",
+		"notificationToast.border": "#ffffff22",
+		"notificationLink.foreground": "#f2abbe", // Accent light (link)
+		/*
+
+
+EEEEEEEEEEEEEEEEEEEEEE                             tttt                                                                   iiii                                                                                                lllllll
+E::::::::::::::::::::E                          ttt:::t                                                                  i::::i                                                                                               l:::::l
+E::::::::::::::::::::E                          t:::::t                                                                   iiii                                                                                                l:::::l
+EE::::::EEEEEEEEE::::E                          t:::::t                                                                                                                                                                       l:::::l
+  E:::::E       EEEEEExxxxxxx      xxxxxxxttttttt:::::ttttttt        eeeeeeeeeeee    nnnn  nnnnnnnn        ssssssssss   iiiiiii    ooooooooooo   nnnn  nnnnnnnn        ssssssssss            cccccccccccccccc   ooooooooooo    l::::l    ooooooooooo   rrrrr   rrrrrrrrr       ssssssssss
+  E:::::E              x:::::x    x:::::x t:::::::::::::::::t      ee::::::::::::ee  n:::nn::::::::nn    ss::::::::::s  i:::::i  oo:::::::::::oo n:::nn::::::::nn    ss::::::::::s         cc:::::::::::::::c oo:::::::::::oo  l::::l  oo:::::::::::oo r::::rrr:::::::::r    ss::::::::::s
+  E::::::EEEEEEEEEE     x:::::x  x:::::x  t:::::::::::::::::t     e::::::eeeee:::::een::::::::::::::nn ss:::::::::::::s  i::::i o:::::::::::::::on::::::::::::::nn ss:::::::::::::s       c:::::::::::::::::co:::::::::::::::o l::::l o:::::::::::::::or:::::::::::::::::r ss:::::::::::::s
+  E:::::::::::::::E      x:::::xx:::::x   tttttt:::::::tttttt    e::::::e     e:::::enn:::::::::::::::ns::::::ssss:::::s i::::i o:::::ooooo:::::onn:::::::::::::::ns::::::ssss:::::s     c:::::::cccccc:::::co:::::ooooo:::::o l::::l o:::::ooooo:::::orr::::::rrrrr::::::rs::::::ssss:::::s
+  E:::::::::::::::E       x::::::::::x          t:::::t          e:::::::eeeee::::::e  n:::::nnnn:::::n s:::::s  ssssss  i::::i o::::o     o::::o  n:::::nnnn:::::n s:::::s  ssssss      c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r     r:::::r s:::::s  ssssss
+  E::::::EEEEEEEEEE        x::::::::x           t:::::t          e:::::::::::::::::e   n::::n    n::::n   s::::::s       i::::i o::::o     o::::o  n::::n    n::::n   s::::::s           c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r     rrrrrrr   s::::::s
+  E:::::E                  x::::::::x           t:::::t          e::::::eeeeeeeeeee    n::::n    n::::n      s::::::s    i::::i o::::o     o::::o  n::::n    n::::n      s::::::s        c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r                  s::::::s
+  E:::::E       EEEEEE    x::::::::::x          t:::::t    tttttte:::::::e             n::::n    n::::nssssss   s:::::s  i::::i o::::o     o::::o  n::::n    n::::nssssss   s:::::s      c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r            ssssss   s:::::s
+EE::::::EEEEEEEE:::::E   x:::::xx:::::x         t::::::tttt:::::te::::::::e            n::::n    n::::ns:::::ssss::::::si::::::io:::::ooooo:::::o  n::::n    n::::ns:::::ssss::::::s     c:::::::cccccc:::::co:::::ooooo:::::ol::::::lo:::::ooooo:::::o r:::::r            s:::::ssss::::::s
+E::::::::::::::::::::E  x:::::x  x:::::x        tt::::::::::::::t e::::::::eeeeeeee    n::::n    n::::ns::::::::::::::s i::::::io:::::::::::::::o  n::::n    n::::ns::::::::::::::s       c:::::::::::::::::co:::::::::::::::ol::::::lo:::::::::::::::o r:::::r            s::::::::::::::s
+E::::::::::::::::::::E x:::::x    x:::::x         tt:::::::::::tt  ee:::::::::::::e    n::::n    n::::n s:::::::::::ss  i::::::i oo:::::::::::oo   n::::n    n::::n s:::::::::::ss         cc:::::::::::::::c oo:::::::::::oo l::::::l oo:::::::::::oo  r:::::r             s:::::::::::ss
+EEEEEEEEEEEEEEEEEEEEEExxxxxxx      xxxxxxx          ttttttttttt      eeeeeeeeeeeeee    nnnnnn    nnnnnn  sssssssssss    iiiiiiii   ooooooooooo     nnnnnn    nnnnnn  sssssssssss             cccccccccccccccc   ooooooooooo   llllllll   ooooooooooo    rrrrrrr              sssssssssss
+
+*/
+		"extensionButton.prominentForeground": "#e7e7e7",
+		"extensionButton.prominentBackground": "#e5527980", // accent 50%
+		"extensionButton.prominentHoverBackground": "#e55279", // Accent
+		"extensionIcon.starForeground": "#ec7e9c", // Accent light (link)
+		"extensionIcon.verifiedForeground": "#7cde55", // Highlight flashy
+		"extensionButton.background": "#e5527980", // accent
+		"extensionButton.foreground": "#e7e7e7", // foreground
+		"extensionButton.hoverBackground": "#e55279", // Accent%
+		"extensionIcon.sponsorForeground": "#ff4794",
+		// "extensionIcon.preReleaseForeground": "#f2ff00",
+		/*
+
+
+     QQQQQQQQQ                         iiii                      kkkkkkkk                                      iiii                      kkkkkkkk                                                                                          lllllll
+   QQ:::::::::QQ                      i::::i                     k::::::k                                     i::::i                     k::::::k                                                                                          l:::::l
+ QQ:::::::::::::QQ                     iiii                      k::::::k                                      iiii                      k::::::k                                                                                          l:::::l
+Q:::::::QQQ:::::::Q                                              k::::::k                                                                k::::::k                                                                                          l:::::l
+Q::::::O   Q::::::Quuuuuu    uuuuuu  iiiiiii     cccccccccccccccc k:::::k    kkkkkkk     ppppp   ppppppppp   iiiiiii     cccccccccccccccc k:::::k    kkkkkkk eeeeeeeeeeee    rrrrr   rrrrrrrrr            cccccccccccccccc   ooooooooooo    l::::l    ooooooooooo   rrrrr   rrrrrrrrr       ssssssssss
+Q:::::O     Q:::::Qu::::u    u::::u  i:::::i   cc:::::::::::::::c k:::::k   k:::::k      p::::ppp:::::::::p  i:::::i   cc:::::::::::::::c k:::::k   k:::::kee::::::::::::ee  r::::rrr:::::::::r         cc:::::::::::::::c oo:::::::::::oo  l::::l  oo:::::::::::oo r::::rrr:::::::::r    ss::::::::::s
+Q:::::O     Q:::::Qu::::u    u::::u   i::::i  c:::::::::::::::::c k:::::k  k:::::k       p:::::::::::::::::p  i::::i  c:::::::::::::::::c k:::::k  k:::::ke::::::eeeee:::::eer:::::::::::::::::r       c:::::::::::::::::co:::::::::::::::o l::::l o:::::::::::::::or:::::::::::::::::r ss:::::::::::::s
+Q:::::O     Q:::::Qu::::u    u::::u   i::::i c:::::::cccccc:::::c k:::::k k:::::k        pp::::::ppppp::::::p i::::i c:::::::cccccc:::::c k:::::k k:::::ke::::::e     e:::::err::::::rrrrr::::::r     c:::::::cccccc:::::co:::::ooooo:::::o l::::l o:::::ooooo:::::orr::::::rrrrr::::::rs::::::ssss:::::s
+Q:::::O     Q:::::Qu::::u    u::::u   i::::i c::::::c     ccccccc k::::::k:::::k          p:::::p     p:::::p i::::i c::::::c     ccccccc k::::::k:::::k e:::::::eeeee::::::e r:::::r     r:::::r     c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r     r:::::r s:::::s  ssssss
+Q:::::O     Q:::::Qu::::u    u::::u   i::::i c:::::c              k:::::::::::k           p:::::p     p:::::p i::::i c:::::c              k:::::::::::k  e:::::::::::::::::e  r:::::r     rrrrrrr     c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r     rrrrrrr   s::::::s
+Q:::::O  QQQQ:::::Qu::::u    u::::u   i::::i c:::::c              k:::::::::::k           p:::::p     p:::::p i::::i c:::::c              k:::::::::::k  e::::::eeeeeeeeeee   r:::::r                 c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r                  s::::::s
+Q::::::O Q::::::::Qu:::::uuuu:::::u   i::::i c::::::c     ccccccc k::::::k:::::k          p:::::p    p::::::p i::::i c::::::c     ccccccc k::::::k:::::k e:::::::e            r:::::r                 c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r            ssssss   s:::::s
+Q:::::::QQ::::::::Qu:::::::::::::::uui::::::ic:::::::cccccc:::::ck::::::k k:::::k         p:::::ppppp:::::::pi::::::ic:::::::cccccc:::::ck::::::k k:::::ke::::::::e           r:::::r                 c:::::::cccccc:::::co:::::ooooo:::::ol::::::lo:::::ooooo:::::o r:::::r            s:::::ssss::::::s
+ QQ::::::::::::::Q  u:::::::::::::::ui::::::i c:::::::::::::::::ck::::::k  k:::::k        p::::::::::::::::p i::::::i c:::::::::::::::::ck::::::k  k:::::ke::::::::eeeeeeee   r:::::r                  c:::::::::::::::::co:::::::::::::::ol::::::lo:::::::::::::::o r:::::r            s::::::::::::::s
+   QQ:::::::::::Q    uu::::::::uu:::ui::::::i  cc:::::::::::::::ck::::::k   k:::::k       p::::::::::::::pp  i::::::i  cc:::::::::::::::ck::::::k   k:::::kee:::::::::::::e   r:::::r                   cc:::::::::::::::c oo:::::::::::oo l::::::l oo:::::::::::oo  r:::::r             s:::::::::::ss
+     QQQQQQQQ::::QQ    uuuuuuuu  uuuuiiiiiiii    cccccccccccccccckkkkkkkk    kkkkkkk      p::::::pppppppp    iiiiiiii    cccccccccccccccckkkkkkkk    kkkkkkk eeeeeeeeeeeeee   rrrrrrr                     cccccccccccccccc   ooooooooooo   llllllll   ooooooooooo    rrrrrrr              sssssssssss
+             Q:::::Q                                                                      p:::::p
+              QQQQQQ                                                                      p:::::p
+                                                                                         p:::::::p
+                                                                                         p:::::::p
+                                                                                         p:::::::p
+                                                                                         ppppppppp
+
+*/
+		"pickerGroup.border": "#ffffff38", // White 25%
+		"pickerGroup.foreground": "#ec7e9c", // Accent light (link)
+		"quickInput.background": "#282e33", // black
+		"quickInput.foreground": "#ffffff7d", // Black 50%
+		"quickInputList.focusBackground": "#e5527980", // Accent 50%
+		"quickInputList.focusForeground": "#e7e7e7", // Foreground
+		"quickInputList.focusIconForeground": "#ec7e9c", // Accent light (link)
+		// "quickInputTitle.background": "#ff0000",
+		/*
+
+                                                              bbbbbbbb                                                 dddddddd                                                                           bbbbbbbb
+KKKKKKKKK    KKKKKKK                                          b::::::b              iiii                               d::::::d  iiii                                            lllllll                  b::::::b                               lllllll
+K:::::::K    K:::::K                                          b::::::b             i::::i                              d::::::d i::::i                                           l:::::l                  b::::::b                               l:::::l
+K:::::::K    K:::::K                                          b::::::b              iiii                               d::::::d  iiii                                            l:::::l                  b::::::b                               l:::::l
+K:::::::K   K::::::K                                           b:::::b                                                 d:::::d                                                   l:::::l                   b:::::b                               l:::::l
+KK::::::K  K:::::KKK    eeeeeeeeeeee  yyyyyyy           yyyyyyyb:::::bbbbbbbbb    iiiiiiinnnn  nnnnnnnn        ddddddddd:::::d iiiiiiinnnn  nnnnnnnn       ggggggggg   ggggg      l::::l   aaaaaaaaaaaaa   b:::::bbbbbbbbb        eeeeeeeeeeee    l::::l
+  K:::::K K:::::K     ee::::::::::::ee y:::::y         y:::::y b::::::::::::::bb  i:::::in:::nn::::::::nn    dd::::::::::::::d i:::::in:::nn::::::::nn    g:::::::::ggg::::g      l::::l   a::::::::::::a  b::::::::::::::bb    ee::::::::::::ee  l::::l
+  K::::::K:::::K     e::::::eeeee:::::eey:::::y       y:::::y  b::::::::::::::::b  i::::in::::::::::::::nn  d::::::::::::::::d  i::::in::::::::::::::nn  g:::::::::::::::::g      l::::l   aaaaaaaaa:::::a b::::::::::::::::b  e::::::eeeee:::::eel::::l
+  K:::::::::::K     e::::::e     e:::::e y:::::y     y:::::y   b:::::bbbbb:::::::b i::::inn:::::::::::::::nd:::::::ddddd:::::d  i::::inn:::::::::::::::ng::::::ggggg::::::gg      l::::l            a::::a b:::::bbbbb:::::::be::::::e     e:::::el::::l
+  K:::::::::::K     e:::::::eeeee::::::e  y:::::y   y:::::y    b:::::b    b::::::b i::::i  n:::::nnnn:::::nd::::::d    d:::::d  i::::i  n:::::nnnn:::::ng:::::g     g:::::g       l::::l     aaaaaaa:::::a b:::::b    b::::::be:::::::eeeee::::::el::::l
+  K::::::K:::::K    e:::::::::::::::::e    y:::::y y:::::y     b:::::b     b:::::b i::::i  n::::n    n::::nd:::::d     d:::::d  i::::i  n::::n    n::::ng:::::g     g:::::g       l::::l   aa::::::::::::a b:::::b     b:::::be:::::::::::::::::e l::::l
+  K:::::K K:::::K   e::::::eeeeeeeeeee      y:::::y:::::y      b:::::b     b:::::b i::::i  n::::n    n::::nd:::::d     d:::::d  i::::i  n::::n    n::::ng:::::g     g:::::g       l::::l  a::::aaaa::::::a b:::::b     b:::::be::::::eeeeeeeeeee  l::::l
+KK::::::K  K:::::KKKe:::::::e                y:::::::::y       b:::::b     b:::::b i::::i  n::::n    n::::nd:::::d     d:::::d  i::::i  n::::n    n::::ng::::::g    g:::::g       l::::l a::::a    a:::::a b:::::b     b:::::be:::::::e           l::::l
+K:::::::K   K::::::Ke::::::::e                y:::::::y        b:::::bbbbbb::::::bi::::::i n::::n    n::::nd::::::ddddd::::::ddi::::::i n::::n    n::::ng:::::::ggggg:::::g      l::::::la::::a    a:::::a b:::::bbbbbb::::::be::::::::e         l::::::l
+K:::::::K    K:::::K e::::::::eeeeeeee         y:::::y         b::::::::::::::::b i::::::i n::::n    n::::n d:::::::::::::::::di::::::i n::::n    n::::n g::::::::::::::::g      l::::::la:::::aaaa::::::a b::::::::::::::::b  e::::::::eeeeeeee l::::::l
+K:::::::K    K:::::K  ee:::::::::::::e        y:::::y          b:::::::::::::::b  i::::::i n::::n    n::::n  d:::::::::ddd::::di::::::i n::::n    n::::n  gg::::::::::::::g      l::::::l a::::::::::aa:::ab:::::::::::::::b    ee:::::::::::::e l::::::l
+KKKKKKKKK    KKKKKKK    eeeeeeeeeeeeee       y:::::y           bbbbbbbbbbbbbbbb   iiiiiiii nnnnnn    nnnnnn   ddddddddd   dddddiiiiiiii nnnnnn    nnnnnn    gggggggg::::::g      llllllll  aaaaaaaaaa  aaaabbbbbbbbbbbbbbbb       eeeeeeeeeeeeee llllllll
+                                            y:::::y                                                                                                                 g:::::g
+                                           y:::::y                                                                                                      gggggg      g:::::g
+                                          y:::::y                                                                                                       g:::::gg   gg:::::g
+                                         y:::::y                                                                                                         g::::::ggg:::::::g
+                                        yyyyyyy                                                                                                           gg:::::::::::::g
+                                                                                                                                                            ggg::::::ggg
+                                                                                                                                                               gggggg
+*/
+		"keybindingLabel.background": "#e5527980", // Accent 50%
+		"keybindingLabel.foreground": "#e7e7e7", // foreground
+		"keybindingLabel.border": "#e55279", // accent
+		"keybindingLabel.bottomBorder": "#e55279", // accent
+		"keybindingTable.headerBackground": "#282e33", // black
+		"keybindingTable.rowsBackground": "#282e33", // black
+		/*
+
+                                                                                                                                                                                   dddddddd
+IIIIIIIIII                         tttt                                                                                              tttt                                          d::::::d     TTTTTTTTTTTTTTTTTTTTTTT                                                              iiii                                     lllllll                                           lllllll
+I::::::::I                      ttt:::t                                                                                           ttt:::t                                          d::::::d     T:::::::::::::::::::::T                                                             i::::i                                    l:::::l                                           l:::::l
+I::::::::I                      t:::::t                                                                                           t:::::t                                          d::::::d     T:::::::::::::::::::::T                                                              iiii                                     l:::::l                                           l:::::l
+II::::::II                      t:::::t                                                                                           t:::::t                                          d:::::d      T:::::TT:::::::TT:::::T                                                                                                       l:::::l                                           l:::::l
+  I::::Innnn  nnnnnnnn    ttttttt:::::ttttttt        eeeeeeeeeeee       ggggggggg   gggggrrrrr   rrrrrrrrr   aaaaaaaaaaaaa  ttttttt:::::ttttttt        eeeeeeeeeeee        ddddddddd:::::d      TTTTTT  T:::::T  TTTTTTeeeeeeeeeeee    rrrrr   rrrrrrrrr      mmmmmmm    mmmmmmm   iiiiiiinnnn  nnnnnnnn      aaaaaaaaaaaaa    l::::l          cccccccccccccccc   ooooooooooo    l::::l    ooooooooooo   rrrrr   rrrrrrrrr       ssssssssss
+  I::::In:::nn::::::::nn  t:::::::::::::::::t      ee::::::::::::ee    g:::::::::ggg::::gr::::rrr:::::::::r  a::::::::::::a t:::::::::::::::::t      ee::::::::::::ee    dd::::::::::::::d              T:::::T      ee::::::::::::ee  r::::rrr:::::::::r   mm:::::::m  m:::::::mm i:::::in:::nn::::::::nn    a::::::::::::a   l::::l        cc:::::::::::::::c oo:::::::::::oo  l::::l  oo:::::::::::oo r::::rrr:::::::::r    ss::::::::::s
+  I::::In::::::::::::::nn t:::::::::::::::::t     e::::::eeeee:::::ee g:::::::::::::::::gr:::::::::::::::::r aaaaaaaaa:::::at:::::::::::::::::t     e::::::eeeee:::::ee d::::::::::::::::d              T:::::T     e::::::eeeee:::::eer:::::::::::::::::r m::::::::::mm::::::::::m i::::in::::::::::::::nn   aaaaaaaaa:::::a  l::::l       c:::::::::::::::::co:::::::::::::::o l::::l o:::::::::::::::or:::::::::::::::::r ss:::::::::::::s
+  I::::Inn:::::::::::::::ntttttt:::::::tttttt    e::::::e     e:::::eg::::::ggggg::::::ggrr::::::rrrrr::::::r         a::::atttttt:::::::tttttt    e::::::e     e:::::ed:::::::ddddd:::::d              T:::::T    e::::::e     e:::::err::::::rrrrr::::::rm::::::::::::::::::::::m i::::inn:::::::::::::::n           a::::a  l::::l      c:::::::cccccc:::::co:::::ooooo:::::o l::::l o:::::ooooo:::::orr::::::rrrrr::::::rs::::::ssss:::::s
+  I::::I  n:::::nnnn:::::n      t:::::t          e:::::::eeeee::::::eg:::::g     g:::::g  r:::::r     r:::::r  aaaaaaa:::::a      t:::::t          e:::::::eeeee::::::ed::::::d    d:::::d              T:::::T    e:::::::eeeee::::::e r:::::r     r:::::rm:::::mmm::::::mmm:::::m i::::i  n:::::nnnn:::::n    aaaaaaa:::::a  l::::l      c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r     r:::::r s:::::s  ssssss
+  I::::I  n::::n    n::::n      t:::::t          e:::::::::::::::::e g:::::g     g:::::g  r:::::r     rrrrrrraa::::::::::::a      t:::::t          e:::::::::::::::::e d:::::d     d:::::d              T:::::T    e:::::::::::::::::e  r:::::r     rrrrrrrm::::m   m::::m   m::::m i::::i  n::::n    n::::n  aa::::::::::::a  l::::l      c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r     rrrrrrr   s::::::s
+  I::::I  n::::n    n::::n      t:::::t          e::::::eeeeeeeeeee  g:::::g     g:::::g  r:::::r           a::::aaaa::::::a      t:::::t          e::::::eeeeeeeeeee  d:::::d     d:::::d              T:::::T    e::::::eeeeeeeeeee   r:::::r            m::::m   m::::m   m::::m i::::i  n::::n    n::::n a::::aaaa::::::a  l::::l      c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r                  s::::::s
+  I::::I  n::::n    n::::n      t:::::t    tttttte:::::::e           g::::::g    g:::::g  r:::::r          a::::a    a:::::a      t:::::t    tttttte:::::::e           d:::::d     d:::::d              T:::::T    e:::::::e            r:::::r            m::::m   m::::m   m::::m i::::i  n::::n    n::::na::::a    a:::::a  l::::l      c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r            ssssss   s:::::s
+II::::::IIn::::n    n::::n      t::::::tttt:::::te::::::::e          g:::::::ggggg:::::g  r:::::r          a::::a    a:::::a      t::::::tttt:::::te::::::::e          d::::::ddddd::::::dd           TT:::::::TT  e::::::::e           r:::::r            m::::m   m::::m   m::::mi::::::i n::::n    n::::na::::a    a:::::a l::::::l     c:::::::cccccc:::::co:::::ooooo:::::ol::::::lo:::::ooooo:::::o r:::::r            s:::::ssss::::::s
+I::::::::In::::n    n::::n      tt::::::::::::::t e::::::::eeeeeeee   g::::::::::::::::g  r:::::r          a:::::aaaa::::::a      tt::::::::::::::t e::::::::eeeeeeee   d:::::::::::::::::d           T:::::::::T   e::::::::eeeeeeee   r:::::r            m::::m   m::::m   m::::mi::::::i n::::n    n::::na:::::aaaa::::::a l::::::l      c:::::::::::::::::co:::::::::::::::ol::::::lo:::::::::::::::o r:::::r            s::::::::::::::s
+I::::::::In::::n    n::::n        tt:::::::::::tt  ee:::::::::::::e    gg::::::::::::::g  r:::::r           a::::::::::aa:::a       tt:::::::::::tt  ee:::::::::::::e    d:::::::::ddd::::d           T:::::::::T    ee:::::::::::::e   r:::::r            m::::m   m::::m   m::::mi::::::i n::::n    n::::n a::::::::::aa:::al::::::l       cc:::::::::::::::c oo:::::::::::oo l::::::l oo:::::::::::oo  r:::::r             s:::::::::::ss
+IIIIIIIIIInnnnnn    nnnnnn          ttttttttttt      eeeeeeeeeeeeee      gggggggg::::::g  rrrrrrr            aaaaaaaaaa  aaaa         ttttttttttt      eeeeeeeeeeeeee     ddddddddd   ddddd           TTTTTTTTTTT      eeeeeeeeeeeeee   rrrrrrr            mmmmmm   mmmmmm   mmmmmmiiiiiiii nnnnnn    nnnnnn  aaaaaaaaaa  aaaallllllll         cccccccccccccccc   ooooooooooo   llllllll   ooooooooooo    rrrrrrr              sssssssssss
+                                                                                 g:::::g
+                                                                     gggggg      g:::::g
+                                                                     g:::::gg   gg:::::g
+                                                                      g::::::ggg:::::::g
+                                                                       gg:::::::::::::g
+                                                                         ggg::::::ggg
+                                                                            gggggg
+*/
+		"terminal.background": "#282e33", // black
+		"terminal.foreground": "#e7e7e7", // foreground
+		// "terminal.border": "#ffffff22",
+		"terminal.ansiBlack": "#0C0C0C",
+		"terminal.ansiBlue": "#2854d7",
+		"terminal.ansiBrightBlack": "#767676",
+		"terminal.ansiBrightBlue": "#4c97ff",
+		"terminal.ansiBrightCyan": "#42ffff",
+		"terminal.ansiBrightGreen": "#44b13e",
+		"terminal.ansiBrightMagenta": "#e157d1",
+		"terminal.ansiBrightRed": "#ff001e",
+		"terminal.ansiBrightWhite": "#e8e8e8",
+		"terminal.ansiBrightYellow": "#cbce36",
+		"terminal.ansiCyan": "#519baa",
+		"terminal.ansiGreen": "#438341",
+		"terminal.ansiMagenta": "#7f3e3e",
+		"terminal.ansiRed": "#8ca421",
+		"terminal.ansiWhite": "#CCCCCC",
+		"terminal.ansiYellow": "#ae9019",
+		"terminal.selectionBackground": "#e5527980", // Accent 50%
+		"terminal.findMatchBackground": "#4ec92c",
+		"terminal.findMatchBorder": "#282e33", // black
+		"terminal.findMatchHighlightBackground": "#3ff90c49",
+		"terminal.findMatchHighlightBorder": "#282e33",
+		"terminalCursor.background": "#e7e7e7", // foreground
+		"terminalCursor.foreground": "#ff4794",
+		"terminal.dropBackground": "#ffffff38", // white 25%
+		"terminal.tab.activeBorder": "#ff4794", // Highlight flashy
+		"terminalCommandDecoration.defaultBackground": "#ff4794", // Highlight flashy
+		"terminalCommandDecoration.successBackground": "#44b13e",
+		"terminalOverviewRuler.findMatchForeground": "#44b13e",
+		"terminalOverviewRuler.cursorForeground": "#fff",
+		/*
+
+                                        bbbbbbbb
+DDDDDDDDDDDDD                           b::::::b                                                                                            lllllll
+D::::::::::::DDD                        b::::::b                                                                                            l:::::l
+D:::::::::::::::DD                      b::::::b                                                                                            l:::::l
+DDD:::::DDDDD:::::D                      b:::::b                                                                                            l:::::l
+  D:::::D    D:::::D     eeeeeeeeeeee    b:::::bbbbbbbbb    uuuuuu    uuuuuu     ggggggggg   ggggg         cccccccccccccccc   ooooooooooo    l::::l    ooooooooooo   rrrrr   rrrrrrrrr       ssssssssss
+  D:::::D     D:::::D  ee::::::::::::ee  b::::::::::::::bb  u::::u    u::::u    g:::::::::ggg::::g       cc:::::::::::::::c oo:::::::::::oo  l::::l  oo:::::::::::oo r::::rrr:::::::::r    ss::::::::::s
+  D:::::D     D:::::D e::::::eeeee:::::eeb::::::::::::::::b u::::u    u::::u   g:::::::::::::::::g      c:::::::::::::::::co:::::::::::::::o l::::l o:::::::::::::::or:::::::::::::::::r ss:::::::::::::s
+  D:::::D     D:::::De::::::e     e:::::eb:::::bbbbb:::::::bu::::u    u::::u  g::::::ggggg::::::gg     c:::::::cccccc:::::co:::::ooooo:::::o l::::l o:::::ooooo:::::orr::::::rrrrr::::::rs::::::ssss:::::s
+  D:::::D     D:::::De:::::::eeeee::::::eb:::::b    b::::::bu::::u    u::::u  g:::::g     g:::::g      c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r     r:::::r s:::::s  ssssss
+  D:::::D     D:::::De:::::::::::::::::e b:::::b     b:::::bu::::u    u::::u  g:::::g     g:::::g      c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r     rrrrrrr   s::::::s
+  D:::::D     D:::::De::::::eeeeeeeeeee  b:::::b     b:::::bu::::u    u::::u  g:::::g     g:::::g      c:::::c             o::::o     o::::o l::::l o::::o     o::::o r:::::r                  s::::::s
+  D:::::D    D:::::D e:::::::e           b:::::b     b:::::bu:::::uuuu:::::u  g::::::g    g:::::g      c::::::c     ccccccco::::o     o::::o l::::l o::::o     o::::o r:::::r            ssssss   s:::::s
+DDD:::::DDDDD:::::D  e::::::::e          b:::::bbbbbb::::::bu:::::::::::::::uug:::::::ggggg:::::g      c:::::::cccccc:::::co:::::ooooo:::::ol::::::lo:::::ooooo:::::o r:::::r            s:::::ssss::::::s
+D:::::::::::::::DD    e::::::::eeeeeeee  b::::::::::::::::b  u:::::::::::::::u g::::::::::::::::g       c:::::::::::::::::co:::::::::::::::ol::::::lo:::::::::::::::o r:::::r            s::::::::::::::s
+D::::::::::::DDD       ee:::::::::::::e  b:::::::::::::::b    uu::::::::uu:::u  gg::::::::::::::g        cc:::::::::::::::c oo:::::::::::oo l::::::l oo:::::::::::oo  r:::::r             s:::::::::::ss
+DDDDDDDDDDDDD            eeeeeeeeeeeeee  bbbbbbbbbbbbbbbb       uuuuuuuu  uuuu    gggggggg::::::g          cccccccccccccccc   ooooooooooo   llllllll   ooooooooooo    rrrrrrr              sssssssssss
+                                                                                          g:::::g
+                                                                              gggggg      g:::::g
+                                                                              g:::::gg   gg:::::g
+                                                                               g::::::ggg:::::::g
+                                                                                gg:::::::::::::g
+                                                                                  ggg::::::ggg
+                                                                                     gggggg
+*/
+		"debugToolBar.background": "#1a161b",
+		"debugToolBar.border": "#cc6633",
+		/*
+
+
+   SSSSSSSSSSSSSSS                              tttt               tttt            iiii
+ SS:::::::::::::::S                          ttt:::t            ttt:::t           i::::i
+S:::::SSSSSS::::::S                          t:::::t            t:::::t            iiii
+S:::::S     SSSSSSS                          t:::::t            t:::::t
+S:::::S                eeeeeeeeeeee    ttttttt:::::tttttttttttttt:::::ttttttt    iiiiiiinnnn  nnnnnnnn       ggggggggg   ggggg    ssssssssss
+S:::::S              ee::::::::::::ee  t:::::::::::::::::tt:::::::::::::::::t    i:::::in:::nn::::::::nn    g:::::::::ggg::::g  ss::::::::::s
+ S::::SSSS          e::::::eeeee:::::eet:::::::::::::::::tt:::::::::::::::::t     i::::in::::::::::::::nn  g:::::::::::::::::gss:::::::::::::s
+  SS::::::SSSSS    e::::::e     e:::::etttttt:::::::tttttttttttt:::::::tttttt     i::::inn:::::::::::::::ng::::::ggggg::::::ggs::::::ssss:::::s
+    SSS::::::::SS  e:::::::eeeee::::::e      t:::::t            t:::::t           i::::i  n:::::nnnn:::::ng:::::g     g:::::g  s:::::s  ssssss
+       SSSSSS::::S e:::::::::::::::::e       t:::::t            t:::::t           i::::i  n::::n    n::::ng:::::g     g:::::g    s::::::s
+            S:::::Se::::::eeeeeeeeeee        t:::::t            t:::::t           i::::i  n::::n    n::::ng:::::g     g:::::g       s::::::s
+            S:::::Se:::::::e                 t:::::t    tttttt  t:::::t    tttttt i::::i  n::::n    n::::ng::::::g    g:::::g ssssss   s:::::s
+SSSSSSS     S:::::Se::::::::e                t::::::tttt:::::t  t::::::tttt:::::ti::::::i n::::n    n::::ng:::::::ggggg:::::g s:::::ssss::::::s
+S::::::SSSSSS:::::S e::::::::eeeeeeee        tt::::::::::::::t  tt::::::::::::::ti::::::i n::::n    n::::n g::::::::::::::::g s::::::::::::::s
+S:::::::::::::::SS   ee:::::::::::::e          tt:::::::::::tt    tt:::::::::::tti::::::i n::::n    n::::n  gg::::::::::::::g  s:::::::::::ss
+ SSSSSSSSSSSSSSS       eeeeeeeeeeeeee            ttttttttttt        ttttttttttt  iiiiiiii nnnnnn    nnnnnn    gggggggg::::::g   sssssssssss
+                                                                                                                      g:::::g
+                                                                                                          gggggg      g:::::g
+                                                                                                          g:::::gg   gg:::::g
+                                                                                                           g::::::ggg:::::::g
+                                                                                                            gg:::::::::::::g
+                                                                                                              ggg::::::ggg
+                                                                                                               gggggg
+*/
+		"settings.checkboxBackground": "#3a3a40", // Background input
+		"settings.checkboxForeground": "#e7e7e7", // foreground
+		"settings.checkboxBorder": "#262b31", // Background menu, widget
+		"settings.dropdownBackground": "#3a3a40", // Background inputBackground input
+		"settings.dropdownForeground": "#e7e7e7", // foreground
+		"settings.dropdownBorder": "#262b31", // Background menu, widget
+		"settings.focusedRowBackground": "#282e33", // black
+		"settings.numberInputBackground": "#3a3a40", // Background inputBackground input
+		"settings.numberInputForeground": "#e7e7e7", // foreground
+		"settings.numberInputBorder": "#262b31", // Background menu, widget
+		"settings.rowHoverBackground": "#e5527919",
+		"settings.headerForeground": "#e7e7e7", // foreground
+		"settings.headerBorder": "#ff000000", // transparent
+		"settings.sashBorder": "#3a3a40", // Background inputBackground input
+		"settings.modifiedItemIndicator": "#be416280", // Background button, selection, menu border
+		/*
+
+                                                                                       dddddddd                                                                                 bbbbbbbb
+BBBBBBBBBBBBBBBBB                                                                      d::::::d                                                                                 b::::::b
+B::::::::::::::::B                                                                     d::::::d                                                                                 b::::::b
+B::::::BBBBBB:::::B                                                                    d::::::d                                                                                 b::::::b
+BB:::::B     B:::::B                                                                   d:::::d                                                                                   b:::::b
+  B::::B     B:::::Brrrrr   rrrrrrrrr       eeeeeeeeeeee    aaaaaaaaaaaaa      ddddddddd:::::d     ccccccccccccccccrrrrr   rrrrrrrrr   uuuuuu    uuuuuu     mmmmmmm    mmmmmmm   b:::::bbbbbbbbb        ssssssssss
+  B::::B     B:::::Br::::rrr:::::::::r    ee::::::::::::ee  a::::::::::::a   dd::::::::::::::d   cc:::::::::::::::cr::::rrr:::::::::r  u::::u    u::::u   mm:::::::m  m:::::::mm b::::::::::::::bb    ss::::::::::s
+  B::::BBBBBB:::::B r:::::::::::::::::r  e::::::eeeee:::::eeaaaaaaaaa:::::a d::::::::::::::::d  c:::::::::::::::::cr:::::::::::::::::r u::::u    u::::u  m::::::::::mm::::::::::mb::::::::::::::::b ss:::::::::::::s
+  B:::::::::::::BB  rr::::::rrrrr::::::re::::::e     e:::::e         a::::ad:::::::ddddd:::::d c:::::::cccccc:::::crr::::::rrrrr::::::ru::::u    u::::u  m::::::::::::::::::::::mb:::::bbbbb:::::::bs::::::ssss:::::s
+  B::::BBBBBB:::::B  r:::::r     r:::::re:::::::eeeee::::::e  aaaaaaa:::::ad::::::d    d:::::d c::::::c     ccccccc r:::::r     r:::::ru::::u    u::::u  m:::::mmm::::::mmm:::::mb:::::b    b::::::b s:::::s  ssssss
+  B::::B     B:::::B r:::::r     rrrrrrre:::::::::::::::::e aa::::::::::::ad:::::d     d:::::d c:::::c              r:::::r     rrrrrrru::::u    u::::u  m::::m   m::::m   m::::mb:::::b     b:::::b   s::::::s
+  B::::B     B:::::B r:::::r            e::::::eeeeeeeeeee a::::aaaa::::::ad:::::d     d:::::d c:::::c              r:::::r            u::::u    u::::u  m::::m   m::::m   m::::mb:::::b     b:::::b      s::::::s
+  B::::B     B:::::B r:::::r            e:::::::e         a::::a    a:::::ad:::::d     d:::::d c::::::c     ccccccc r:::::r            u:::::uuuu:::::u  m::::m   m::::m   m::::mb:::::b     b:::::bssssss   s:::::s
+BB:::::BBBBBB::::::B r:::::r            e::::::::e        a::::a    a:::::ad::::::ddddd::::::ddc:::::::cccccc:::::c r:::::r            u:::::::::::::::uum::::m   m::::m   m::::mb:::::bbbbbb::::::bs:::::ssss::::::s
+B:::::::::::::::::B  r:::::r             e::::::::eeeeeeeea:::::aaaa::::::a d:::::::::::::::::d c:::::::::::::::::c r:::::r             u:::::::::::::::um::::m   m::::m   m::::mb::::::::::::::::b s::::::::::::::s
+B::::::::::::::::B   r:::::r              ee:::::::::::::e a::::::::::aa:::a d:::::::::ddd::::d  cc:::::::::::::::c r:::::r              uu::::::::uu:::um::::m   m::::m   m::::mb:::::::::::::::b   s:::::::::::ss
+BBBBBBBBBBBBBBBBB    rrrrrrr                eeeeeeeeeeeeee  aaaaaaaaaa  aaaa  ddddddddd   ddddd    cccccccccccccccc rrrrrrr                uuuuuuuu  uuuummmmmm   mmmmmm   mmmmmmbbbbbbbbbbbbbbbb     sssssssssss
+
+*/
+		"breadcrumb.background": "#282e33", // Accent 25%
+		"breadcrumb.focusForeground": "#e7e7e7", // foreground
+		"breadcrumb.foreground": "#ffffff7d", // White 50%
+		"breadcrumb.activeSelectionForeground": "#ff4794", // Highlight flashy
+		"breadcrumbPicker.background": "#282e33", // black
+		/*
+
+
+   SSSSSSSSSSSSSSS                   iiii                                                                      tttt
+ SS:::::::::::::::S                 i::::i                                                                  ttt:::t
+S:::::SSSSSS::::::S                  iiii                                                                   t:::::t
+S:::::S     SSSSSSS                                                                                         t:::::t
+S:::::S          nnnn  nnnnnnnn    iiiiiiippppp   ppppppppp   ppppp   ppppppppp       eeeeeeeeeeee    ttttttt:::::ttttttt        ssssssssss
+S:::::S          n:::nn::::::::nn  i:::::ip::::ppp:::::::::p  p::::ppp:::::::::p    ee::::::::::::ee  t:::::::::::::::::t      ss::::::::::s
+ S::::SSSS       n::::::::::::::nn  i::::ip:::::::::::::::::p p:::::::::::::::::p  e::::::eeeee:::::eet:::::::::::::::::t    ss:::::::::::::s
+  SS::::::SSSSS  nn:::::::::::::::n i::::ipp::::::ppppp::::::ppp::::::ppppp::::::pe::::::e     e:::::etttttt:::::::tttttt    s::::::ssss:::::s
+    SSS::::::::SS  n:::::nnnn:::::n i::::i p:::::p     p:::::p p:::::p     p:::::pe:::::::eeeee::::::e      t:::::t           s:::::s  ssssss
+       SSSSSS::::S n::::n    n::::n i::::i p:::::p     p:::::p p:::::p     p:::::pe:::::::::::::::::e       t:::::t             s::::::s
+            S:::::Sn::::n    n::::n i::::i p:::::p     p:::::p p:::::p     p:::::pe::::::eeeeeeeeeee        t:::::t                s::::::s
+            S:::::Sn::::n    n::::n i::::i p:::::p    p::::::p p:::::p    p::::::pe:::::::e                 t:::::t    ttttttssssss   s:::::s
+SSSSSSS     S:::::Sn::::n    n::::ni::::::ip:::::ppppp:::::::p p:::::ppppp:::::::pe::::::::e                t::::::tttt:::::ts:::::ssss::::::s
+S::::::SSSSSS:::::Sn::::n    n::::ni::::::ip::::::::::::::::p  p::::::::::::::::p  e::::::::eeeeeeee        tt::::::::::::::ts::::::::::::::s
+S:::::::::::::::SS n::::n    n::::ni::::::ip::::::::::::::pp   p::::::::::::::pp    ee:::::::::::::e          tt:::::::::::tt s:::::::::::ss
+ SSSSSSSSSSSSSSS   nnnnnn    nnnnnniiiiiiiip::::::pppppppp     p::::::pppppppp        eeeeeeeeeeeeee            ttttttttttt    sssssssssss
+                                           p:::::p             p:::::p
+                                           p:::::p             p:::::p
+                                          p:::::::p           p:::::::p
+                                          p:::::::p           p:::::::p
+                                          p:::::::p           p:::::::p
+                                          ppppppppp           ppppppppp
+
+*/
+		"editor.snippetTabstopHighlightBackground": "#282e33",
+		"editor.snippetTabstopHighlightBorder": "#e55279",
+		"editor.snippetFinalTabstopHighlightBackground": "#282e33",
+		"editor.snippetFinalTabstopHighlightBorder": "#19bdf9",
+		"symbolIcon.snippetForeground": "#ff4794",
+	}
+}

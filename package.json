@@ -1,0 +1,26 @@
+{
+	"name": "vatin.never-be-lost",
+	"displayName": "Never be lost (night and day theme)",
+	"description": "Never be lost in the interface of VS Code. Always know where is the focus and each element while being elegant.",
+	"version": "1.0.0",
+	"engines": {
+		"vscode": "^1.73.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Never be lost (Day)",
+				"uiTheme": "vs-dark",
+				"path": "./themes/never-be-lost-day-color-theme.json"
+			},
+			{
+				"label": "Never be lost (Night)",
+				"uiTheme": "vs-dark",
+				"path": "./themes/never-be-lost-night-color-theme.json"
+			}
+		]
+	}
+}
