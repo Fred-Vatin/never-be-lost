@@ -1210,5 +1210,5 @@ S:::::::::::::::SS n::::n    n::::ni::::::ip::::::::::::::pp   p::::::::::::::pp
 		"editor.snippetFinalTabstopHighlightBackground": "#000",
 		"editor.snippetFinalTabstopHighlightBorder": "#19bdf9",
 		"symbolIcon.snippetForeground": "#ff66eb",
-	}
+	}	
 }

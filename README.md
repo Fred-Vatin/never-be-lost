@@ -1,5 +1,7 @@
 # NEVER BE LOST • theme for VS CODE
 
+[Never be Lost](https://github.com/Fred-Vatin/never-be-lost) © 2022 by [Fred Vatin](https://github.com/Fred-Vatin) is licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1)
+
 Never be lost in the interface of VS Code. Always know where is the focus and each element while being elegant.
 
 <!-- todo add screenshot -->
@@ -9,6 +11,8 @@ Never be lost in the interface of VS Code. Always know where is the focus and ea
 <!-- problem -->
 
 <!-- *** -->
+
+<!-- ----   -->
 
 ## Install
 
