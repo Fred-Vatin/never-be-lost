@@ -548,7 +548,7 @@ EEEEEEEEEEEEEEEEEEEEEE   ddddddddd   dddddiiiiiiii         ttttttttttt     ooooo
 		"editor.selectionHighlightBorder": "#ff66eb", // Highlight flashy
 		// controlled by setting editor.occurrencesHighlight
 		"editor.wordHighlightBackground": "#ffffff00", // transparent
-		"editor.wordHighlightBorder": "#e5050500", // transparent
+		"editor.wordHighlightBorder": "#6240ba80", // accent 50%
 		"editor.wordHighlightStrongBackground": "#ffffff00", // transparent
 		"editor.wordHighlightStrongBorder": "#ffffff00", // transparent
 		"editor.findMatchBackground": "#ffffff00", // transparent
@@ -1210,5 +1210,5 @@ S:::::::::::::::SS n::::n    n::::ni::::::ip::::::::::::::pp   p::::::::::::::pp
 		"editor.snippetFinalTabstopHighlightBackground": "#000",
 		"editor.snippetFinalTabstopHighlightBorder": "#19bdf9",
 		"symbolIcon.snippetForeground": "#ff66eb",
-	}	
+	}
 }

@@ -548,7 +548,7 @@ EEEEEEEEEEEEEEEEEEEEEE   ddddddddd   dddddiiiiiiii         ttttttttttt     ooooo
 		"editor.selectionHighlightBorder": "#ff4794", // Highlight flashy
 		// controlled by setting editor.occurrencesHighlight
 		"editor.wordHighlightBackground": "#ffffff00", // transparent
-		"editor.wordHighlightBorder": "#e5050500", // transparent
+		"editor.wordHighlightBorder": "#e5527980", // accent 50%
 		"editor.wordHighlightStrongBackground": "#ffffff00", // transparent
 		"editor.wordHighlightStrongBorder": "#ffffff00", // transparent
 		"editor.findMatchBackground": "#ffffff00", // transparent
