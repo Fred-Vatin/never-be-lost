@@ -4,6 +4,6 @@ Fallowing Semantic Versioning.
 
 <!-- ## [Unreleased] -->
 
-## v1.0.0 (2022-12-03)
+## v0.1.0 (2022-12-23)
 
 -   Initial release
