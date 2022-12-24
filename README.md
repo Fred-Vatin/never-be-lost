@@ -45,7 +45,7 @@ To override a specific theme only, use this model in your user settings :
 ```jsonc
 "workbench.colorCustomizations": {
 	"[Never be lost (Day)]": {
-		// you customization here
+		// your customization here
 	}
 }
 ```
@@ -55,7 +55,7 @@ and
 ```jsonc
 "editor.tokenColorCustomizations": {
 	"[Never be lost (Day)]": {
-		// you customization here
+		// your customization here
 	}
 }
 ```
@@ -70,8 +70,8 @@ and
 
 ## VS Codes issues to follow
 
--   [#167785](https://github.com/microsoft/vscode/issues/167785) Background color of lines overlaps
--   [#167766](https://github.com/microsoft/vscode/issues/167766) `editor.selectionHighlight…` colors are applied while non selected text in JSON
+- [#167785](https://github.com/microsoft/vscode/issues/167785) Background color of lines overlaps
+- [#167766](https://github.com/microsoft/vscode/issues/167766) `editor.selectionHighlight…` colors are applied while non selected text in JSON
 
 ## Post your issue
 
@@ -79,6 +79,6 @@ Help to fix bugs and to improve this theme. Post an [issue](https://github.com/F
 
 Pull requests are accepted.
 
-## Support me
+<!-- ## Support me
 
-If you like my work, you can offer me a coffee.
+If you like my work, you can offer me a coffee. -->
