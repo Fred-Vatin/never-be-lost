@@ -20,7 +20,7 @@ name: Updates changelog and releases
 on: workflow_dispatch
 
 jobs:
-  changelog:
+  Updates changelog and releases:
     runs-on: ubuntu-latest
 
     steps:
@@ -37,8 +37,9 @@ jobs:
         uses: TriPSs/conventional-changelog-action@v3
         with:
           github-token: ${{ secrets.github_token }}
-          version-file: "./package.json,./package-lock.json"
+          version-file: "./package.json"
 
+      # Deprecated. Use another action
       - name: create release
         uses: actions/create-release@v1
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
