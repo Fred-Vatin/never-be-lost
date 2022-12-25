@@ -1,46 +1,46 @@
 {
-	"name": "vatin.never-be-lost",
-	"displayName": "Never be lost (night and day theme)",
-	"description": "Never be lost in the interface of VS Code. Always know where is the focus and distinguish each element thanks to elegants themes.",
-	"version": "0.1.0",
-	"publisher": "Fred-Vatin",
-	"license": "CC-BY-SA-4.0",
-	"engines": {
-		"vscode": "^1.73.0"
-	},
-	"categories": [
-		"Themes"
-	],
-	"keywords": [
-		"interface",
-		"focus",
-		"elegant"
-	],
-	"galleryBanner": {
-		"color": "#262b31",
-		"theme": "dark"
-	},
-	"icon": "./ressources/icon.png",
-	"bugs": {
-		"url": "https://github.com/Fred-Vatin/never-be-lost/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Fred-Vatin/never-be-lost.git"
-	},
-	"homepage": "https://github.com/Fred-Vatin/never-be-lost",
-	"contributes": {
-		"themes": [
-			{
-				"label": "Never be lost (Day)",
-				"uiTheme": "vs-dark",
-				"path": "./themes/never-be-lost-day-color-theme.json"
-			},
-			{
-				"label": "Never be lost (Night)",
-				"uiTheme": "vs-dark",
-				"path": "./themes/never-be-lost-night-color-theme.json"
-			}
-		]
-	}
+  "name": "vatin.never-be-lost",
+  "displayName": "Never be lost (night and day theme)",
+  "description": "Never be lost in the interface of VS Code. Always know where is the focus and distinguish each element thanks to elegants themes.",
+  "version": "0.2.0",
+  "publisher": "Fred-Vatin",
+  "license": "CC-BY-SA-4.0",
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "interface",
+    "focus",
+    "elegant"
+  ],
+  "galleryBanner": {
+    "color": "#262b31",
+    "theme": "dark"
+  },
+  "icon": "./ressources/icon.png",
+  "bugs": {
+    "url": "https://github.com/Fred-Vatin/never-be-lost/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Fred-Vatin/never-be-lost.git"
+  },
+  "homepage": "https://github.com/Fred-Vatin/never-be-lost",
+  "contributes": {
+    "themes": [
+      {
+        "label": "Never be lost (Day)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/never-be-lost-day-color-theme.json"
+      },
+      {
+        "label": "Never be lost (Night)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/never-be-lost-night-color-theme.json"
+      }
+    ]
+  }
 }
