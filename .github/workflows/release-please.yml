@@ -1,0 +1,33 @@
+# https://github.com/google-github-actions/release-please-action
+# https://www.padok.fr/en/blog/release-please
+name: release-please
+
+# it will create or update a pull request with changes on each push on master branch
+on:
+  push:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Starting log
+        run: |
+          echo "🐧 This job is running on a ${{ runner.os }} server hosted by GitHub!"
+          echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+          echo "📰 This job is triggered by this event: ${{ github.event_name }}"
+      - uses: google-github-actions/release-please-action@v3
+        with:
+          # need a personal access token : https://github.com/settings/tokens
+          token: ${{ secrets.RELEASE_PLEASE }}
+          # node allow to access package.json to read and bump version
+          release-type: node
+
+          # package-name: ${{env.ACTION_NAME}}
+      - run: echo "🍏 This job's status is ${{ job.status }}."
