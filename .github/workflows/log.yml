@@ -1,0 +1,15 @@
+# https://docs.github.com/en/actions/using-workflows/reusing-workflows
+name: Reusable starting log
+
+on:
+  workflow_call:
+
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Starting log
+        run: |
+          echo "🐧 This job is running on a ${{ runner.os }} server hosted by GitHub!"
+          echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+          echo "📰 This job is triggered by this event: ${{ github.event_name }}"
