@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.2](https://github.com/Fred-Vatin/never-be-lost/compare/v0.3.1...v0.3.2) (2022-12-26)
+
+
+### 🧰 Miscellaneous
+
+* update homepage URL ([f4ea5c5](https://github.com/Fred-Vatin/never-be-lost/commit/f4ea5c55047615107846e4b17462e192903701e7))
+
 ## [0.3.1](https://github.com/Fred-Vatin/never-be-lost/compare/v0.3.0...v0.3.1) (2022-12-26)
 
 
