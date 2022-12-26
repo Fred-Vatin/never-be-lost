@@ -28,6 +28,17 @@ jobs:
           token: ${{ secrets.RELEASE_PLEASE }}
           # node allow to access package.json to read and bump version
           release-type: node
+          changelog-types: |
+            [
+              {"type":"feat","section":"🚀 Features","hidden":false},
+              {"type":"fix","section":"🐛 Bug Fixes","hidden":false},
+              {"type":"perf","section":"🧰 Miscellaneous","hidden":false},
+              {"type":"refactor","section":"🧰 Miscellaneous","hidden":false},
+              {"type":"chore","section":"🧰 Miscellaneous","hidden":false},
+              {"type":"build","section":"🧰 Miscellaneous","hidden":false},
+              {"type":"deps","section":"🧰 Miscellaneous","hidden":false}
+            ]
+          pull-request-header: ":robot: I have created a release"
 
           # package-name: ${{env.ACTION_NAME}}
       - run: echo "🍏 This job's status is ${{ job.status }}."
