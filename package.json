@@ -42,5 +42,11 @@
 				"path": "./themes/never-be-lost-night-color-theme.json"
 			}
 		]
+	},
+	"devDependencies": {
+		"@vscode/vsce": "^2.16.0"
+	},
+	"scripts": {
+		"deploy": "vsce publish --no-yarn"
 	}
 }

@@ -1,0 +1,27 @@
+# https://code.visualstudio.com/api/working-with-extensions/continuous-integration#github-actions-automated-publishing
+name: publish extension to Marketplace
+
+# it will publish when a release is published
+on:
+  release:
+    types:
+      - published
+
+permissions:
+  contents: write
+
+jobs:
+  log:
+    if:
+    uses: ./.github/workflows/log.yml
+
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Publish
+        # the manifest needs a deploy script entry
+        run: npm run deploy
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+
+      - run: echo "🍏 This job's status is ${{ job.status }}."
