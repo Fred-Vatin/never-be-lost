@@ -81,6 +81,6 @@ Help to fix bugs and to improve this theme. Post an [issue](https://github.com/F
 
 Pull requests are accepted.
 
-<!-- ## Support me
+## Support me
 
-If you like my work, you can offer me a coffee. -->
+If you like my work, you can offer me a coffee or sponsor me [here](https://github.com/sponsors/Fred-Vatin).
