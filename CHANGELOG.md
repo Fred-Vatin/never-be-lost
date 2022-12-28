@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.3.3](https://github.com/Fred-Vatin/never-be-lost/compare/v0.3.2...v0.3.3) (2022-12-28)
+
+
+### 🧰 Miscellaneous
+
+* add auto publication via gh action ([0d6c60e](https://github.com/Fred-Vatin/never-be-lost/commit/0d6c60e1436f73a29257070b2a7009755614d527))
+* add sponsor link ([8dcdc9d](https://github.com/Fred-Vatin/never-be-lost/commit/8dcdc9d19f02f6e5ac122e53616e4629c009b1c7))
+* exclude node_modules from extension package ([29426cb](https://github.com/Fred-Vatin/never-be-lost/commit/29426cbfeb498565a8028a147a778af9ef375a0f))
+* log action as reusable workflow ([5b09eda](https://github.com/Fred-Vatin/never-be-lost/commit/5b09edaaa0daf9c620d5ae04617c199b5f1ce6a2))
+
 ## [0.3.2](https://github.com/Fred-Vatin/never-be-lost/compare/v0.3.1...v0.3.2) (2022-12-26)
 
 
