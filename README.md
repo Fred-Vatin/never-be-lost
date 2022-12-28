@@ -20,7 +20,7 @@ Never be lost in the interface of VS Code. Always know where is the focus and ea
 | json![json default](ressources/screenshots/json-default.png) | json![json theme](ressources/screenshots/json-day.png) |
 | css![css default](ressources/screenshots/css-default.png)    | css![css theme](ressources/screenshots/css-day.png)    |
 
-3. Always know where the focus is. Very useful using groups.
+3. Always know where the focus is, what is the active editor and file. Very useful using groups.
 
 | Default                                                    | Never be Lost                                        |
 | ---------------------------------------------------------- | ---------------------------------------------------- |
@@ -29,6 +29,8 @@ Never be lost in the interface of VS Code. Always know where is the focus and ea
 ## Install
 
 <!-- todo add link -->
+
+**For the moment, this extension is not yet available on the marketplace. I’m waiting for my sponsorhip aprobation link from github.**
 
 1. Search for `vatin.never-be-lost` in the _**extensions**_ section of your VS Code or in the market place.
 2. Click on the `install` button.
