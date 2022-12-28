@@ -1,4 +1,4 @@
-# https://code.visualstudio.com/api/working-with-extensions/continuous-integration#github-actions-automated-publishing
+# https://github.com/marketplace/actions/publish-vs-code-extension
 name: publish extension to Marketplace
 
 # it will publish when a release is published
@@ -11,17 +11,18 @@ permissions:
   contents: write
 
 jobs:
-  log:
-    if:
-    uses: ./.github/workflows/log.yml
-
-  publish:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Publish
-        # the manifest needs a deploy script entry
-        run: npm run deploy
-        env:
-          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm ci
+      - name: Publish to Visual Studio Marketplace
+        uses: HaaLeo/publish-vscode-extension@v1
+        with:
+          pat: ${{ secrets.VSCE_PAT }}
+          registryUrl: https://marketplace.visualstudio.com
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
