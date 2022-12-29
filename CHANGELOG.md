@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.5](https://github.com/Fred-Vatin/never-be-lost/compare/v0.3.4...v0.3.5) (2022-12-29)
+
+
+### 🧰 Miscellaneous
+
+* update and hopefully fix the autopublish to marketplace action ([e3a89b4](https://github.com/Fred-Vatin/never-be-lost/commit/e3a89b4eb0e4014edef386e461d52219f9a2b240))
+
 ## [0.3.4](https://github.com/Fred-Vatin/never-be-lost/compare/v0.3.3...v0.3.4) (2022-12-28)
 
 
