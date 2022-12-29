@@ -32,7 +32,7 @@ Never be lost in the interface of VS Code. Always know where is the focus and ea
 
 **For the moment, this extension is not yet available on the marketplace. I’m waiting for my sponsorhip aprobation link from github.**
 
-1. Search for `vatin.never-be-lost` in the _**extensions**_ section of your VS Code or in the market place.
+1. Search for `Fred-Vatin.never-be-lost` in the _**extensions**_ section of your VS Code or go to the [marketplace](https://marketplace.visualstudio.com/items?itemName=Fred-Vatin.never-be-lost&ssr=false#overview).
 2. Click on the `install` button.
 3. The theme should preview. Press enter to validate
 
