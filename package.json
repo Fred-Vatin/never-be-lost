@@ -28,7 +28,6 @@
 		"type": "git",
 		"url": "https://github.com/Fred-Vatin/never-be-lost.git"
 	},
-	"homepage": "https://github.com/Fred-Vatin/never-be-lost#never-be-lost--theme-for-vs-code",
 	"contributes": {
 		"themes": [
 			{
