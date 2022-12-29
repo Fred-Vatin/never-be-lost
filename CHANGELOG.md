@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.7](https://github.com/Fred-Vatin/never-be-lost/compare/v0.3.6...v0.3.7) (2022-12-29)
+
+
+### 📚 Documentation
+
+* add CLI installation ([325ff23](https://github.com/Fred-Vatin/never-be-lost/commit/325ff2362d9db41729139d0c29fc8410b37635fa))
+* add marketplace link ([2c23f9b](https://github.com/Fred-Vatin/never-be-lost/commit/2c23f9b21807577f3e0d3d6d5bebb44fea77b88e))
+
 ## [0.3.6](https://github.com/Fred-Vatin/never-be-lost/compare/v0.3.5...v0.3.6) (2022-12-29)
 
 
