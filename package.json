@@ -2,7 +2,7 @@
 	"name": "never-be-lost",
 	"displayName": "Never be lost (night and day theme)",
 	"description": "Never be lost in the interface of VS Code. Always know where is the focus and distinguish each element thanks to elegants themes.",
-	"version": "0.3.4",
+	"version": "0.3.5",
 	"publisher": "Fred-Vatin",
 	"license": "CC-BY-SA-4.0",
 	"engines": {
