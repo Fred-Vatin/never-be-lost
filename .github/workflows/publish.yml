@@ -1,4 +1,4 @@
-# https://github.com/marketplace/actions/publish-vs-code-extension
+# https://github.com/HaaLeo/publish-vscode-extension
 name: publish extension to Marketplace
 
 # it will publish when a release is published
