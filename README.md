@@ -26,15 +26,19 @@ Never be lost in the interface of VS Code. Always know where is the focus and ea
 | ---------------------------------------------------------- | ---------------------------------------------------- |
 | ![focus default](ressources/screenshots/focus-default.png) | ![focus theme](ressources/screenshots/focus-day.png) |
 
-## Install
+## Installation
 
-<!-- todo add link -->
-
-**For the moment, this extension is not yet available on the marketplace. I’m waiting for my sponsorhip aprobation link from github.**
+### From the marketplace
 
 1. Search for `Fred-Vatin.never-be-lost` in the _**extensions**_ section of your VS Code or go to the [marketplace](https://marketplace.visualstudio.com/items?itemName=Fred-Vatin.never-be-lost&ssr=false#overview).
 2. Click on the `install` button.
 3. The theme should preview. Press enter to validate
+
+### From the CLI
+
+With [shell commands](https://code.visualstudio.com/docs/editor/command-line) installed, you can use the following command to install the extension:
+
+`$ code --install-extension Fred-Vatin.never-be-lost`
 
 ## Override this theme
 
