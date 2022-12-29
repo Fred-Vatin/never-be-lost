@@ -45,8 +45,5 @@
 	},
 	"sponsor": {
 		"url": "https://github.com/sponsors/Fred-Vatin"
-	},
-	"devDependencies": {
-		"@vscode/vsce": "^2.16.0"
 	}
 }
