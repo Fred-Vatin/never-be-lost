@@ -20,7 +20,7 @@
 		"color": "#262b31",
 		"theme": "dark"
 	},
-	"icon": "./ressources/icon.png",
+	"icon": "ressources/icon.png",
 	"bugs": {
 		"url": "https://github.com/Fred-Vatin/never-be-lost/issues"
 	},
@@ -34,12 +34,12 @@
 			{
 				"label": "Never be lost (Day)",
 				"uiTheme": "vs-dark",
-				"path": "./themes/never-be-lost-day-color-theme.json"
+				"path": "themes/never-be-lost-day-color-theme.json"
 			},
 			{
 				"label": "Never be lost (Night)",
 				"uiTheme": "vs-dark",
-				"path": "./themes/never-be-lost-night-color-theme.json"
+				"path": "themes/never-be-lost-night-color-theme.json"
 			}
 		]
 	},
