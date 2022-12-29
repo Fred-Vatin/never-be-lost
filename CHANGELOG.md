@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.6](https://github.com/Fred-Vatin/never-be-lost/compare/v0.3.5...v0.3.6) (2022-12-29)
+
+
+### 🐛 Bug Fixes
+
+* relative path in manifest ([1438435](https://github.com/Fred-Vatin/never-be-lost/commit/1438435e8f160dab6b3e5aaeeaf63125660a456f))
+
 ## [0.3.5](https://github.com/Fred-Vatin/never-be-lost/compare/v0.3.4...v0.3.5) (2022-12-29)
 
 
