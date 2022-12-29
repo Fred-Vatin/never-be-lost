@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.5](https://github.com/Fred-Vatin/never-be-lost/compare/v0.3.4...v0.3.5) (2022-12-29)
+
+
+### 🧰 Miscellaneous
+
+* allow manual publish action ([2c7d80c](https://github.com/Fred-Vatin/never-be-lost/commit/2c7d80cd08627aa88d96527e3a9ba8eecbec7547))
+* update and hopefully fix the autopublish to marketplace action ([e3a89b4](https://github.com/Fred-Vatin/never-be-lost/commit/e3a89b4eb0e4014edef386e461d52219f9a2b240))
+
+
+### 🐛 Bug Fixes
+
+* rename extension to validate publishing ([41158b3](https://github.com/Fred-Vatin/never-be-lost/commit/41158b355a3d27c20828bdbaa5d683a2293bf827))
+
 ## [0.3.4](https://github.com/Fred-Vatin/never-be-lost/compare/v0.3.3...v0.3.4) (2022-12-28)
 
 
