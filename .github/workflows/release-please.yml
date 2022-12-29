@@ -8,7 +8,7 @@ on:
     branches:
       - main
       - master
-  workflow_dispatch:   
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -30,14 +30,23 @@ jobs:
           changelog-types: |
             [
               {"type":"feat","section":"🚀 Features","hidden":false},
-              {"type":"fix","section":"🐛 Bug Fixes","hidden":false},
-              {"type":"perf","section":"🧰 Miscellaneous","hidden":false},
-              {"type":"refactor","section":"🧰 Miscellaneous","hidden":false},
-              {"type":"chore","section":"🧰 Miscellaneous","hidden":false},
-              {"type":"build","section":"🧰 Miscellaneous","hidden":false},
-              {"type":"deps","section":"🧰 Miscellaneous","hidden":false}
+              {"type":"change","section":"🚀 Features","hidden":false},
+              {"type":"deprecate","section":"⚠️ Changes","hidden":false},
+              {"type":"remove","section":"⚠️ Changes","hidden":false},
+              {"type":"fix","section":"🐞 Bug Fixes","hidden":false},
+              {"type":"revert","section":"🐞 Bug Fixes","hidden":false},
+              {"type":"security","section":"🐞 Bug Fixes","hidden":false},
+              {"type":"perf","section":"✨ Polish","hidden":false},
+              {"type":"refactor","section":"✨ Polish","hidden":false},
+              {"type":"style","section":"✨ Polish","hidden":false},
+              {"type":"build","section":"🧰 Other","hidden":false},
+              {"type":"chore","section":"🧰 Other","hidden":true},
+              {"type":"deps","section":"🧰 Other","hidden":true},
+              {"type":"ci","section":"🧰 Other","hidden":true},
+              {"type":"test","section":"🧪 Tests","hidden":false},
+              {"type":"docs","section":"📚 Documentation","hidden":false}
             ]
-          pull-request-header: ":robot: I have created a release"
+          pull-request-header: "🤖 I have created a release"
 
           # package-name: ${{env.ACTION_NAME}}
       - run: echo "🍏 This job's status is ${{ job.status }}."
