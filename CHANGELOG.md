@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.7](https://github.com/Fred-Vatin/never-be-lost/compare/v0.3.6...v0.3.7) (2022-12-29)
+
+
+### 🐛 Bug Fixes
+
+* remove homepage link ([b09ad70](https://github.com/Fred-Vatin/never-be-lost/commit/b09ad70976733719e4e50d210d30e97510ee37d0))
+* remove homepage link ([21ded35](https://github.com/Fred-Vatin/never-be-lost/commit/21ded3549cb928843add11355661b47edbe5e2c8))
+
 ## [0.3.6](https://github.com/Fred-Vatin/never-be-lost/compare/v0.3.5...v0.3.6) (2022-12-29)
 
 
