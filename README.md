@@ -4,6 +4,8 @@
 
 Never be lost in the interface of VS Code. Always know where is the focus and each element while being elegant.
 
+**Please rate the extension on the [marketplace](https://marketplace.visualstudio.com/items?itemName=Fred-Vatin.never-be-lost) if you like it. It will be greatly apreciated.**
+
 ## Features
 
 1. Elegant dark themes in night and day flavors
