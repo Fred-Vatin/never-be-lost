@@ -12,21 +12,21 @@ Never be lost in the interface of VS Code. Always know where is the focus and ea
 
 | Day                                                          | Night                                                     |
 | ------------------------------------------------------------ | --------------------------------------------------------- |
-| ![overview default](ressources/screenshots/overview-day.png) | ![Night theme](ressources/screenshots/overview-night.png) |
+| ![overview default](https://raw.githubusercontent.com/Fred-Vatin/never-be-lost/master/ressources/screenshots/overview-day.png) | ![Night theme](https://raw.githubusercontent.com/Fred-Vatin/never-be-lost/master/ressources/screenshots/overview-night.png) |
 
 2. Very advanced tokenization colors for every language
 
 | Default                                                      | Never be Lost                                          |
 | ------------------------------------------------------------ | ------------------------------------------------------ |
-| js![js default](ressources/screenshots/js-default.png)       | js![js theme](ressources/screenshots/js-day.png)       |
-| json![json default](ressources/screenshots/json-default.png) | json![json theme](ressources/screenshots/json-day.png) |
-| css![css default](ressources/screenshots/css-default.png)    | css![css theme](ressources/screenshots/css-day.png)    |
+| js![js default](https://raw.githubusercontent.com/Fred-Vatin/never-be-lost/master/ressources/screenshots/js-default.png)       | js![js theme](https://raw.githubusercontent.com/Fred-Vatin/never-be-lost/master/ressources/screenshots/js-day.png)       |
+| json![json default](https://raw.githubusercontent.com/Fred-Vatin/never-be-lost/master/ressources/screenshots/json-default.png) | json![json theme](https://raw.githubusercontent.com/Fred-Vatin/never-be-lost/master/ressources/screenshots/json-day.png) |
+| css![css default](https://raw.githubusercontent.com/Fred-Vatin/never-be-lost/master/ressources/screenshots/css-default.png)    | css![css theme](https://raw.githubusercontent.com/Fred-Vatin/never-be-lost/master/ressources/screenshots/css-day.png)    |
 
 3. Always know where the focus is, what is the active editor and file. Very useful using groups.
 
 | Default                                                    | Never be Lost                                        |
 | ---------------------------------------------------------- | ---------------------------------------------------- |
-| ![focus default](ressources/screenshots/focus-default.png) | ![focus theme](ressources/screenshots/focus-day.png) |
+| ![focus default](https://raw.githubusercontent.com/Fred-Vatin/never-be-lost/master/ressources/screenshots/focus-default.png) | ![focus theme](https://raw.githubusercontent.com/Fred-Vatin/never-be-lost/master/ressources/screenshots/focus-day.png) |
 
 ## Installation
 
