@@ -1,7 +1,12 @@
 # Changelog
 
-## [0.3.12](https://github.com/Fred-Vatin/never-be-lost/compare/v0.3.11...v0.3.12) (2023-01-01)
+## [0.3.13](https://github.com/Fred-Vatin/never-be-lost/compare/v0.3.12...v0.3.13) (2023-11-20)
 
+### 🐞 Bug Fixes
+
+* ruler line were white 25%, now it’s 10% ([5738c70](https://github.com/Fred-Vatin/never-be-lost/commit/5738c7001bf552c96da57c966ddb66a8e8afb3d9))
+
+## [0.3.12](https://github.com/Fred-Vatin/never-be-lost/compare/v0.3.11...v0.3.12) (2023-01-01)
 
 ### 🧰 Other
 
