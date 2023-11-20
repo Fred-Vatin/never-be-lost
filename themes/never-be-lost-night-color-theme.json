@@ -571,15 +571,15 @@ EEEEEEEEEEEEEEEEEEEEEE   ddddddddd   dddddiiiiiiii         ttttttttttt     ooooo
 		"editor.symbolHighlightBackground": "#ffffff00", // transparent
 		"editor.symbolHighlightBorder": "#3ff90c", // green
 		"editorWhitespace.foreground": "#ffffff38", // white 25%
-		"editorIndentGuide.background": "#ffffff38", // white 25%
-		"editorIndentGuide.activeBackground": "#ffffff4d", // white 35%
+		"editorIndentGuide.background1": "#ffffff38", // white 25%
+		"editorIndentGuide.activeBackground1": "#ffffff4d", // white 35%
 		"editorInlayHint.background": "#3a3a40", // Background input
 		"editorInlayHint.foreground": "#ffffff7d", // White 50%
 		"editorInlayHint.typeForeground": "#7b9cb9",
 		// "editorInlayHint.typeBackground": "#ff0000",
 		"editorInlayHint.parameterForeground": "#b4c17b",
 		// "editorInlayHint.parameterBackground": "#ff0000",
-		"editorRuler.foreground": "#ffffff38", // white 25%
+		"editorRuler.foreground": "#ffffff14", // white 10%
 		// auto rename html tag
 		"editor.linkedEditingBackground": "#0078c871", // blue
 		"editorCodeLens.foreground": "#7b9cb9",
