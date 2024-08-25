@@ -19,34 +19,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: googleapis/release-please-action@v4
+        id: release
         with:
           # this assumes that you have created a personal access token
           # (PAT) and configured it as a GitHub action secret named
-          # `MY_RELEASE_PLEASE_TOKEN` (this secret name is not important).
-          token: ${{ secrets.MY_RELEASE_PLEASE_TOKEN }}
+          # `RELEASE_PLEASE` (this secret name is not important).
+          token: ${{ secrets.RELEASE_PLEASE }}
           # this is a built-in strategy in release-please, see "Action Inputs"
           # for more options
-					release-type: simple
-          changelog-types:
-            [
-              {"type":"feat","section":"🚀 Features","hidden":false},
-              {"type":"change","section":"🚀 Features","hidden":false},
-              {"type":"deprecate","section":"⚠️ Changes","hidden":false},
-              {"type":"remove","section":"⚠️ Changes","hidden":false},
-              {"type":"fix","section":"🐞 Bug Fixes","hidden":false},
-              {"type":"revert","section":"🐞 Bug Fixes","hidden":false},
-              {"type":"security","section":"🐞 Bug Fixes","hidden":false},
-              {"type":"perf","section":"✨ Polish","hidden":false},
-              {"type":"refactor","section":"✨ Polish","hidden":false},
-              {"type":"style","section":"✨ Polish","hidden":false},
-              {"type":"build","section":"🧰 Other","hidden":false},
-              {"type":"chore","section":"🧰 Other","hidden":false},
-              {"type":"deps","section":"🧰 Other","hidden":true},
-              {"type":"ci","section":"🧰 Other","hidden":true},
-              {"type":"test","section":"🧪 Tests","hidden":false},
-              {"type":"docs","section":"📚 Documentation","hidden":false}
-            ]
-          pull-request-header: "🤖 I have created a release"
+          # optional. customize path to release-please-config.json
+          config-file: release-please-config.json
+          # optional. customize path to .release-please-manifest.json
+          manifest-file: .release-please-manifest.json
 
           # package-name: ${{env.ACTION_NAME}}
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: Print release outputs for debugging
+        run: |
+          echo "Release outputs:"
+          echo "🍏 This job's status is ${{ job.status }}."
+          echo "${{ toJson(steps.release.outputs) }}"
