@@ -1,4 +1,4 @@
-# https://github.com/google-github-actions/release-please-action
+# https://github.com/googleapis/release-please-action
 # https://www.padok.fr/en/blog/release-please
 name: release-please
 
@@ -15,19 +15,19 @@ permissions:
   pull-requests: write
 
 jobs:
-  log:
-    uses: ./.github/workflows/log.yml
-
   release-please:
     runs-on: ubuntu-latest
     steps:
-      - uses: google-github-actions/release-please-action@v3
+      - uses: googleapis/release-please-action@v4
         with:
-          # need a personal access token : https://github.com/settings/tokens
-          token: ${{ secrets.RELEASE_PLEASE }}
-          # node allow to access package.json to read and bump version
-          release-type: node
-          changelog-types: |
+          # this assumes that you have created a personal access token
+          # (PAT) and configured it as a GitHub action secret named
+          # `MY_RELEASE_PLEASE_TOKEN` (this secret name is not important).
+          token: ${{ secrets.MY_RELEASE_PLEASE_TOKEN }}
+          # this is a built-in strategy in release-please, see "Action Inputs"
+          # for more options
+					release-type: simple
+          changelog-types:
             [
               {"type":"feat","section":"🚀 Features","hidden":false},
               {"type":"change","section":"🚀 Features","hidden":false},
