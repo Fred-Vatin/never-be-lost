@@ -74,7 +74,8 @@
 				"storage.modifier"
 			],
 			"settings": {
-				"foreground": "#C792EA"
+				"foreground": "#C792EA",
+				"fontStyle": "bold"
 			}
 		},
 		{
@@ -233,10 +234,12 @@
 		{
 			"name": "Entity Types",
 			"scope": [
-				"support.type"
+				"support.type",
+				"type.keyword.pine"
 			],
 			"settings": {
-				"foreground": "#B2CCD6"
+				"foreground": "#8facda",
+				"fontStyle": "italic bold"
 			}
 		},
 		{
