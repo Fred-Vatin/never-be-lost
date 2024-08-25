@@ -36,5 +36,4 @@ jobs:
       - name: Print release outputs for debugging
         run: |
           echo "Release outputs:"
-          echo "🍏 This job's status is ${{ job.status }}."
           echo "${{ toJson(steps.release.outputs) }}"
