@@ -3,7 +3,7 @@
 	"include-component-in-tag": false,
 	"include-v-in-tag": true,
 	"pull-request-header": "🤖 I have created a release",
-	"pull-request-footer": "",
+	"pull-request-footer": " ",
 	"packages": {
 		".": {
 			"package-name": "never-be-lost",
